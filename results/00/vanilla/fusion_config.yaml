@@ -1,0 +1,48 @@
+# GPS-assisted ORB-SLAM3 EKF fusion configuration
+
+dataset:
+  root: /media/slamet/EpsteinFile3/SLAM-Datasets/KITTI-RGBD-GPS
+  orbslam3_root: /media/slamet/EpsteinFile3/dev/ORB_SLAM3
+  sequences: ["00", "05", "07"]
+
+trajectory:
+  fraction: 0.2   # use first 1/5 of each sequence
+
+sequence_mapping:
+  "00": {date: "2011_10_03", drive: "2011_10_03_drive_0027_sync", yaml: "KITTI00-02.yaml"}
+  "01": {date: "2011_10_03", drive: "2011_10_03_drive_0042_sync", yaml: "KITTI00-02.yaml"}
+  "05": {date: "2011_09_30", drive: "2011_09_30_drive_0018_sync", yaml: "KITTI04-12.yaml"}
+  "07": {date: "2011_09_30", drive: "2011_09_30_drive_0027_sync", yaml: "KITTI04-12.yaml"}
+
+gps:
+  sample_distance_m: 10.0
+  position_std: 2.0
+
+slam:
+  position_std: 0.1
+  orientation_std: 0.05
+
+imu:
+  enabled: true
+  accel_std: 0.5
+  gyro_std: 0.01
+
+ekf:
+  process_position_std: 0.05
+  process_velocity_std: 0.5
+  process_orientation_std: 0.01
+  initial_position_std: 1.0
+  initial_velocity_std: 1.0
+  initial_orientation_std: 0.1
+
+synchronization:
+  max_time_diff_s: 0.05
+  alignment_samples: 100
+
+evaluation:
+  rpe_deltas: [1, 10, 100]
+
+modes:
+  - vanilla
+  - vanilla_gps
+  - drift_gps

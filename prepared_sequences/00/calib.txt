@@ -1,0 +1,1 @@
+/media/slamet/EpsteinFile3/SLAM-Datasets/KITTI-RGBD-GPS/odometry/dataset/sequences/00/calib.txt
