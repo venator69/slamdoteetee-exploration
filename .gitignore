@@ -14,7 +14,22 @@ __pycache__/
 
 .DS_Store
 
-build_orb3.log
+build*.log
+*.osa
+ExecMean.txt
+LBA_Stats.txt
+LocalMapTimeStats.txt
+SessionInfo.txt
+TrackingTimeStats.txt
+
 data/*.db
 src/ros2_orb_slam3/TEST_DATASET/
 src/ros2_orb_slam3/orb_slam3/Thirdparty/ORB_SLAM2/Vocabulary/ORBvoc.txt.tar.gz
+src/ros2_orb_slam3/orb_slam3/Thirdparty/CMakeFiles/
+src/ros2_orb_slam3/orb_slam3/Thirdparty/**/CMakeFiles/
+src/ros2_orb_slam3/orb_slam3/Thirdparty/CMakeCache.txt
+src/ros2_orb_slam3/orb_slam3/Thirdparty/CPackConfig.cmake
+src/ros2_orb_slam3/orb_slam3/Thirdparty/CPackSourceConfig.cmake
+src/ros2_orb_slam3/orb_slam3/Thirdparty/Thirdparty/g2o/g2o/config.h
+
+config/env.local
