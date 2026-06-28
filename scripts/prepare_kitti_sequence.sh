@@ -3,12 +3,15 @@
 set -euo pipefail
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-PROJECT_ROOT="$(cd "${SCRIPT_DIR}/.." && pwd)"
+# shellcheck disable=SC1091
+source "${SCRIPT_DIR}/lib/paths.sh"
 CONFIG="${PROJECT_ROOT}/config/fusion_config.yaml"
 
 SEQ="${1:-00}"
 PREPARED_ROOT="${PROJECT_ROOT}/prepared_sequences"
+export KITTI_DATASET_ROOT ORB_SLAM3_ROOT
 python3 - "${SEQ}" "${CONFIG}" "${PREPARED_ROOT}" <<'PY'
+import os
 import sys
 from pathlib import Path
 import yaml
@@ -16,11 +19,11 @@ import yaml
 seq = sys.argv[1]
 config_path = Path(sys.argv[2])
 config = yaml.safe_load(config_path.read_text())
-root = Path(config["dataset"]["root"])
+root = Path(os.environ.get("KITTI_DATASET_ROOT") or config["dataset"]["root"])
 mapping = config["sequence_mapping"][seq]
 raw_drive = root / "raw" / mapping["date"] / mapping["drive"]
 odom_seq = root / "odometry" / "dataset" / "sequences" / seq
-prepared_root = Path(sys.argv[3]) if len(sys.argv) > 3 else Path.home() / "Dev/kitti_gps_ekf_fusion/prepared_sequences"
+prepared_root = Path(sys.argv[3])
 prepared_seq = prepared_root / seq
 
 if not raw_drive.exists():

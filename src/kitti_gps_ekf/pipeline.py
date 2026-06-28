@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import argparse
+import os
 import shutil
 from pathlib import Path
 
@@ -26,9 +27,28 @@ from .trajectory_io import (
 from .visualization import plot_error_analysis, plot_trajectories
 
 
+def _resolve_dataset_path(config: dict, key: str, env_name: str) -> str:
+    env_value = os.environ.get(env_name, "").strip()
+    if env_value:
+        return env_value
+    value = str(config.get("dataset", {}).get(key, "")).strip()
+    if value and not value.startswith("/path/to/"):
+        return value
+    raise ValueError(
+        f"Set {env_name} or dataset.{key} in fusion_config.yaml "
+        f"(see config/env.example)"
+    )
+
+
 def load_config(config_path: Path) -> dict:
     with config_path.open("r", encoding="utf-8") as handle:
-        return yaml.safe_load(handle)
+        config = yaml.safe_load(handle)
+    dataset = config.setdefault("dataset", {})
+    dataset["root"] = _resolve_dataset_path(config, "root", "KITTI_DATASET_ROOT")
+    dataset["orbslam3_root"] = _resolve_dataset_path(
+        config, "orbslam3_root", "ORB_SLAM3_ROOT"
+    )
+    return config
 
 
 def get_trajectory_fraction(config: dict) -> float:

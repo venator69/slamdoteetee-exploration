@@ -3,14 +3,15 @@
 set -euo pipefail
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-PROJECT_ROOT="$(cd "${SCRIPT_DIR}/.." && pwd)"
+# shellcheck disable=SC1091
+source "${SCRIPT_DIR}/lib/paths.sh"
 VENV="${PROJECT_ROOT}/.venv/bin/python"
 export PYTHONPATH="${PROJECT_ROOT}/src:${PYTHONPATH:-}"
 
 SEQ="${1:-00}"
 CONFIG="${PROJECT_ROOT}/config/fusion_config.yaml"
 RESULTS="${PROJECT_ROOT}/results/${SEQ}"
-ORB_LOG="/media/slamet/EpsteinFile3/dev/ORB_SLAM3/logs"
+ORB_LOG="${ORB_SLAM3_ROOT}/logs"
 
 for MODE in vanilla vanilla_gps drift_gps; do
   case "${MODE}" in

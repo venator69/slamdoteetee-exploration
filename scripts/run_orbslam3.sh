@@ -3,15 +3,16 @@
 set -euo pipefail
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-PROJECT_ROOT="$(cd "${SCRIPT_DIR}/.." && pwd)"
+# shellcheck disable=SC1091
+source "${SCRIPT_DIR}/lib/paths.sh"
 CONFIG="${PROJECT_ROOT}/config/fusion_config.yaml"
 
 SEQ="${1:-00}"
 MODE="${2:-vanilla}"   # vanilla | drift_gps
 
-ORB_ROOT="/media/slamet/EpsteinFile3/dev/ORB_SLAM3"
+ORB_ROOT="${ORB_SLAM3_ROOT}"
 VOCAB="${ORB_ROOT}/Vocabulary/ORBvoc.txt"
-KITTI_ROOT="/media/slamet/EpsteinFile3/SLAM-Datasets/KITTI-RGBD-GPS"
+KITTI_ROOT="${KITTI_DATASET_ROOT}"
 PREPARED_ROOT="${PROJECT_ROOT}/prepared_sequences"
 SEQ_DIR="${PREPARED_ROOT}/${SEQ}"
 LOG_DIR="${ORB_ROOT}/logs/kitti_${SEQ}_${MODE}"
@@ -25,7 +26,7 @@ if [[ "${MODE}" == "drift_gps" ]]; then
 fi
 
 FRACTION="$(python3 -c "import yaml; c=yaml.safe_load(open('${CONFIG}')); print(c.get('trajectory', {}).get('fraction', 1.0))")"
-EXPECTED_FRAMES="$(python3 -c "import yaml; from pathlib import Path; c=yaml.safe_load(open('${CONFIG}')); root=Path(c['dataset']['root']); seq='${SEQ}'; n=len((root/'odometry'/'dataset'/'sequences'/seq/'times.txt').read_text().strip().splitlines()); f=float(c.get('trajectory', {}).get('fraction', 1.0)); print(max(1, int(n*f)))")"
+EXPECTED_FRAMES="$(python3 -c "from pathlib import Path; seq='${SEQ}'; root=Path('${KITTI_ROOT}'); n=len((root/'odometry'/'dataset'/'sequences'/seq/'times.txt').read_text().strip().splitlines()); import yaml; c=yaml.safe_load(open('${CONFIG}')); f=float(c.get('trajectory', {}).get('fraction', 1.0)); print(max(1, int(n*f)))")"
 ACTUAL_FRAMES=0
 if [[ -f "${SEQ_DIR}/times.txt" ]]; then
   ACTUAL_FRAMES="$(wc -l < "${SEQ_DIR}/times.txt" | tr -d ' ')"

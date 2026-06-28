@@ -1,8 +1,9 @@
 # GPS-assisted ORB-SLAM3 EKF fusion configuration
 
 dataset:
-  root: /media/slamet/EpsteinFile3/SLAM-Datasets/KITTI-RGBD-GPS
-  orbslam3_root: /media/slamet/EpsteinFile3/dev/ORB_SLAM3
+  # Override via config/env.local or KITTI_DATASET_ROOT / ORB_SLAM3_ROOT env vars.
+  root: /path/to/KITTI-RGBD-GPS
+  orbslam3_root: /path/to/ORB_SLAM3
   sequences: ["00", "05", "07"]
 
 trajectory:

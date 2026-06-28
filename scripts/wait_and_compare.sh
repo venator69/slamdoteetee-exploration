@@ -3,11 +3,12 @@
 set -euo pipefail
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-PROJECT_ROOT="$(cd "${SCRIPT_DIR}/.." && pwd)"
+# shellcheck disable=SC1091
+source "${SCRIPT_DIR}/lib/paths.sh"
 
 SEQ="${1:-00}"
 MODE="${2:-vanilla}"
-ORB_ROOT="/media/slamet/EpsteinFile3/dev/ORB_SLAM3"
+ORB_ROOT="${ORB_SLAM3_ROOT}"
 LOG_TRAJ="${ORB_ROOT}/logs/kitti_${SEQ}_${MODE}/CameraTrajectory.txt"
 ROOT_TRAJ="${ORB_ROOT}/CameraTrajectory.txt"
 POLL_SEC="${POLL_SEC:-30}"

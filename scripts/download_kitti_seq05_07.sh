@@ -2,7 +2,11 @@
 # Download missing KITTI raw sequences for 05 and 07.
 set -euo pipefail
 
-BASE="/media/slamet/EpsteinFile3/SLAM-Datasets/KITTI-RGBD-GPS"
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+# shellcheck disable=SC1091
+source "${SCRIPT_DIR}/lib/paths.sh"
+
+BASE="${KITTI_DATASET_ROOT}"
 DL="${BASE}/downloads"
 RAW="${BASE}/raw"
 S3="https://s3.eu-central-1.amazonaws.com/avg-kitti"
