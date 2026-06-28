@@ -1,0 +1,10 @@
+backend: cpu
+method: ultralytics_cpu
+model: /home/slamet/semantic_slam_ws/models/yolov8n.pt
+dataset: TUM freiburg1 desk (COCO)
+frames: 573
+mean_yolo_ms: 607.8066036755827
+median_yolo_ms: 582.620647001022
+std_yolo_ms: 75.99552087709107
+max_yolo_ms: 899.0770319942385
+mean_detections: 5.261780104712042

@@ -1,0 +1,10 @@
+backend: hailo
+method: hailo_e2e
+model: /home/slamet/semantic_slam_ws/models/yolov8n.hef
+dataset: TUM freiburg1 desk (COCO)
+frames: 573
+mean_yolo_ms: 16.269081321021382
+median_yolo_ms: 15.856967002036981
+std_yolo_ms: 3.1344911518557805
+max_yolo_ms: 39.42900099355029
+mean_detections: 4.12565445026178
