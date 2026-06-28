@@ -1,6 +1,6 @@
 backend: hailo
 method: hailo_e2e
-model: /home/slamet/semantic_slam_ws/models/yolov8n.hef
+model: /path/to/yolov8n.hef
 dataset: TUM freiburg1 desk (COCO)
 frames: 573
 mean_yolo_ms: 16.269081321021382

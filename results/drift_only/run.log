@@ -6,7 +6,7 @@ This is free software, and you are welcome to redistribute it
 under certain conditions. See LICENSE.txt.
 
 Input sensor was set to: RGB-D
-Loading settings from /media/slamet/EpsteinFile3/dev/ORB_SLAM3/Examples/RGB-D/presets/TUM1_lc_on_mpc_on.yaml
+Loading settings from /path/to/ORB_SLAM3/Examples/RGB-D/presets/TUM1_lc_on_mpc_on.yaml
 	-Loaded camera 1
 Camera.newHeight optional parameter does not exist...
 Camera.newWidth optional parameter does not exist...

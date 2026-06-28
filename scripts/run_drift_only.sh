@@ -3,8 +3,9 @@
 set -euo pipefail
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-PROJECT_ROOT="$(cd "${SCRIPT_DIR}/.." && pwd)"
-ORB_ROOT="/media/slamet/EpsteinFile3/dev/ORB_SLAM3"
+# shellcheck disable=SC1091
+source "${SCRIPT_DIR}/lib/paths.sh"
+ORB_ROOT="${ORB_SLAM3_ROOT}"
 SEQ_DIR="${PROJECT_ROOT}/data/rgbd_dataset_freiburg1_desk"
 ASSOC="${SEQ_DIR}/associations.txt"
 YAML="${ORB_ROOT}/Examples/RGB-D/presets/TUM1_lc_on_mpc_on.yaml"

@@ -4,6 +4,7 @@
 from __future__ import annotations
 
 import argparse
+import os
 import re
 import statistics
 import subprocess
@@ -21,9 +22,32 @@ except ImportError:
     sys.path.insert(0, str(Path.home() / ".local/lib/python3.12/site-packages"))
     from ultralytics import YOLO
 
-DEFAULT_HEF = Path.home() / "semantic_slam_ws/models/yolov8n.hef"
-DEFAULT_PT = Path.home() / "semantic_slam_ws/models/yolov8n.pt"
-SEMANTIC_SLAM_SRC = Path.home() / "semantic_slam_ws/src/yolo_detector"
+DEFAULT_HEF = Path("/path/to/yolov8n.hef")
+DEFAULT_PT = Path("/path/to/yolov8n.pt")
+
+
+def resolve_model_path(env_name: str, cli_path: Path | None, fallback: Path) -> Path:
+    if cli_path is not None:
+        return cli_path
+    env_value = os.environ.get(env_name, "").strip()
+    if env_value:
+        return Path(env_value)
+    if str(fallback).startswith("/path/to/"):
+        raise ValueError(
+            f"Set {env_name} in config/env.local or pass --model/--hef "
+            f"(see config/env.example)"
+        )
+    return fallback
+
+
+def hailo_detector_src() -> Path:
+    raw = os.environ.get("YOLO_DETECTOR_SRC", "").strip()
+    if not raw:
+        raise RuntimeError(
+            "Set YOLO_DETECTOR_SRC to the yolo_detector package for the Hailo backend "
+            "(see config/env.example)"
+        )
+    return Path(raw)
 
 
 def load_associations(assoc_file: Path) -> list[tuple[float, str]]:
@@ -37,7 +61,7 @@ def load_associations(assoc_file: Path) -> list[tuple[float, str]]:
 
 
 def create_hailo_backend(hef_path: Path, confidence: float, input_size: int):
-    sys.path.insert(0, str(SEMANTIC_SLAM_SRC))
+    sys.path.insert(0, str(hailo_detector_src()))
     from yolo_detector.hailo_subprocess import create_hailo_backend as _create
 
     return _create(str(hef_path), confidence, input_size)
@@ -214,14 +238,16 @@ def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--project-root", type=Path, default=Path(__file__).resolve().parents[1])
     parser.add_argument("--backend", choices=("cpu", "hailo"), default="cpu")
-    parser.add_argument("--model", type=Path, default=DEFAULT_PT)
-    parser.add_argument("--hef", type=Path, default=DEFAULT_HEF)
+    parser.add_argument("--model", type=Path, default=None)
+    parser.add_argument("--hef", type=Path, default=None)
     parser.add_argument("--allow-hailo-proxy", action="store_true")
     parser.add_argument("--imgsz", type=int, default=640)
     parser.add_argument("--warmup", type=int, default=5)
     args = parser.parse_args()
 
     project = args.project_root
+    model_path = resolve_model_path("YOLO_PT_MODEL", args.model, DEFAULT_PT)
+    hef_path = resolve_model_path("YOLO_HEF_MODEL", args.hef, DEFAULT_HEF)
     seq_dir = project / "data/rgbd_dataset_freiburg1_desk"
     assoc = seq_dir / "associations.txt"
     out_dir = project / f"results/drift_yolo_{args.backend}"
@@ -229,15 +255,15 @@ def main() -> None:
 
     pairs = load_associations(assoc)
     if args.backend == "cpu":
-        records, meta = benchmark_cpu(pairs, seq_dir, args.model, args.imgsz, args.warmup)
+        records, meta = benchmark_cpu(pairs, seq_dir, model_path, args.imgsz, args.warmup)
     else:
         try:
-            records, meta = benchmark_hailo(pairs, seq_dir, args.hef, args.imgsz, args.warmup)
+            records, meta = benchmark_hailo(pairs, seq_dir, hef_path, args.imgsz, args.warmup)
         except RuntimeError:
             if not args.allow_hailo_proxy:
                 raise
             print("WARNING: falling back to hailortcli proxy latency (hailo_platform missing)")
-            records, meta = benchmark_hailo_proxy(pairs, seq_dir, args.hef, args.imgsz)
+            records, meta = benchmark_hailo_proxy(pairs, seq_dir, hef_path, args.imgsz)
 
     write_summary(out_dir, args.backend, records, meta)
 
