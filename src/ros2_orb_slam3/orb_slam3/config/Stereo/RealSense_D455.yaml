@@ -1,0 +1,93 @@
+%YAML:1.0
+
+File.version: "1.0"
+
+#============================================================================================
+# Camera Parameters (Stereo Explicit Format)
+#============================================================================================
+
+Camera.type: "PinHole"
+
+# Left camera (infra1)
+Camera1.fx: 425.3673095703125
+Camera1.fy: 425.3673095703125
+Camera1.cx: 421.6106872558594
+Camera1.cy: 240.7721405029297
+
+Camera1.k1: 0.0
+Camera1.k2: 0.0
+Camera1.p1: 0.0
+Camera1.p2: 0.0
+Camera1.k3: 0.07
+
+# Right camera (infra2)
+Camera2.fx: 425.3673095703125
+Camera2.fy: 425.3673095703125
+Camera2.cx: 421.6106872558594
+Camera2.cy: 240.7721405029297
+
+Camera2.k1: 0.0
+Camera2.k2: 0.0
+Camera2.p1: 0.0
+Camera2.p2: 0.0
+Camera2.k3: 0.0
+
+
+#============================================================================================
+# Image Parameters (MUST match camera_info)
+#============================================================================================
+
+Camera.width: 848
+Camera.height: 480
+
+Camera.fps: 30
+
+Camera.RGB: 0
+
+
+#============================================================================================
+# Stereo Extrinsics
+# Transform from left camera → right camera
+# baseline = 0.095 meters (from RealSense calibration)
+#============================================================================================
+
+Stereo.T_c1_c2: !!opencv-matrix
+  rows: 4
+  cols: 4
+  dt: f
+  data: [ 1.0, 0.0, 0.0, -0.095,
+          0.0, 1.0, 0.0,  0.0,
+          0.0, 0.0, 1.0,  0.0,
+          0.0, 0.0, 0.0,  1.0 ]
+
+
+# Depth threshold (meters)
+Stereo.ThDepth: 40.0
+
+
+#============================================================================================
+# ORB Extractor Parameters
+#============================================================================================
+
+ORBextractor.nFeatures: 1200
+ORBextractor.scaleFactor: 1.2
+ORBextractor.nLevels: 8
+ORBextractor.iniThFAST: 20
+ORBextractor.minThFAST: 7
+
+
+#============================================================================================
+# Viewer Parameters (must be float)
+#============================================================================================
+
+Viewer.KeyFrameSize: 0.05
+Viewer.KeyFrameLineWidth: 1.0
+Viewer.GraphLineWidth: 0.9
+Viewer.PointSize: 2.0
+Viewer.CameraSize: 0.08
+Viewer.CameraLineWidth: 3.0
+
+Viewer.ViewpointX: 0.0
+Viewer.ViewpointY: -0.7
+Viewer.ViewpointZ: -1.8
+Viewer.ViewpointF: 500.0

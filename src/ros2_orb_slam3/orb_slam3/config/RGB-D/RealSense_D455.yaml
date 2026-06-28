@@ -1,0 +1,105 @@
+%YAML:1.0
+
+File.version: "1.0"
+
+#============================================================================================
+# Camera Parameters (RGB-D, color stream intrinsics)
+# Sync from /camera/camera/color/camera_info when available.
+#============================================================================================
+
+Camera.type: "PinHole"
+
+Camera1.fx: 385.0
+Camera1.fy: 385.0
+Camera1.cx: 320.0
+Camera1.cy: 240.0
+
+Camera1.k1: 0.0
+Camera1.k2: 0.0
+Camera1.p1: 0.0
+Camera1.p2: 0.0
+Camera1.k3: 0.0
+
+#============================================================================================
+# Image Parameters (must match RealSense color profile)
+#============================================================================================
+
+Camera.width: 640
+Camera.height: 480
+
+Camera.fps: 15
+
+# RealSense publishes BGR8
+Camera.RGB: 0
+
+# Baseline (meters) and depth threshold for RGB-D mode
+Stereo.ThDepth: 40.0
+Stereo.b: 0.095
+
+# RealSense depth is uint16 millimeters -> meters
+RGBD.DepthMapFactor: 1000.0
+
+#============================================================================================
+# IMU Parameters (RealSense D455 built-in IMU)
+#============================================================================================
+
+IMU.T_b_c1: !!opencv-matrix
+  rows: 4
+  cols: 4
+  dt: f
+  data: [ 1.0, 0.0, 0.0, 0.0,
+          0.0, 1.0, 0.0, 0.0,
+          0.0, 0.0, 1.0, 0.0,
+          0.0, 0.0, 0.0, 1.0 ]
+
+IMU.InsertKFsWhenLost: 1
+IMU.NoiseGyro: 0.001
+IMU.NoiseAcc: 0.01
+IMU.GyroWalk: 0.000001
+IMU.AccWalk: 0.0001
+IMU.Frequency: 200.0
+IMU.fastInit: 1
+
+#============================================================================================
+# Drift Corrector (ORBSLAM3-Drift-Corrector-module)
+#============================================================================================
+
+loopClosing: 1
+
+DriftStabilizer.enable: 0
+DriftStabilizer.enable_csv_logging: 0
+DriftStabilizer.enable_sac: 1
+DriftStabilizer.use_cuda: 0
+DriftStabilizer.sequence_length: 20
+DriftStabilizer.min_sequence_length: 6
+DriftStabilizer.sac_update_period_frames: 15
+DriftStabilizer.risk_disable_threshold: 0.92
+DriftStabilizer.base_correction_gain: 0.15
+DriftStabilizer.model_path: "gru_mpc_model.onnx"
+DriftStabilizer.csv_path: "logs/drift_runtime_log.csv"
+
+#============================================================================================
+# ORB Extractor Parameters
+#============================================================================================
+
+ORBextractor.nFeatures: 1200
+ORBextractor.scaleFactor: 1.2
+ORBextractor.nLevels: 8
+ORBextractor.iniThFAST: 20
+ORBextractor.minThFAST: 7
+
+#============================================================================================
+# Viewer Parameters
+#============================================================================================
+
+Viewer.KeyFrameSize: 0.05
+Viewer.KeyFrameLineWidth: 1.0
+Viewer.GraphLineWidth: 0.9
+Viewer.PointSize: 2.0
+Viewer.CameraSize: 0.08
+Viewer.CameraLineWidth: 3.0
+
+Viewer.ViewpointX: 0.0
+Viewer.ViewpointY: -0.7
+Viewer.ViewpointZ: -1.8
+Viewer.ViewpointF: 500.0

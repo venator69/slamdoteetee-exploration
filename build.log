@@ -1,0 +1,14 @@
+Starting >>> ros2_orb_slam3
+--- stderr: ros2_orb_slam3
+/usr/bin/ld: /home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/Thirdparty/DBoW2/lib/libDBoW2.so: error adding symbols: file in wrong format
+collect2: error: ld returned 1 exit status
+gmake[2]: *** [CMakeFiles/orb_slam3_lib.dir/build.make:696: liborb_slam3_lib.so.] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:142: CMakeFiles/orb_slam3_lib.dir/all] Error 2
+gmake[1]: *** Waiting for unfinished jobs....
+gmake: *** [Makefile:146: all] Error 2
+---
+Failed   <<< ros2_orb_slam3 [1.07s, exited with code 2]
+
+Summary: 0 packages finished [1.38s]
+  1 package failed: ros2_orb_slam3
+  1 package had stderr output: ros2_orb_slam3

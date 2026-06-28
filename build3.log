@@ -1,0 +1,1382 @@
+Starting >>> realsense2_camera_msgs
+Starting >>> realsense2_ros_mqtt_bridge
+Starting >>> ros2_orb_slam3
+Finished <<< realsense2_ros_mqtt_bridge [8.98s]
+Finished <<< realsense2_camera_msgs [20.5s]
+Starting >>> realsense2_camera
+Starting >>> realsense2_description
+Starting >>> realsense2_rviz_plugin
+Finished <<< realsense2_rviz_plugin [7.80s]
+Finished <<< realsense2_description [10.9s]
+--- stderr: ros2_orb_slam3
+In file included from /home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/Thirdparty/DBoW2/DBoW2/FORB.h:17,
+                 from /home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/include/ORBVocabulary.h:23,
+                 from /home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/include/KeyFrame.h:26,
+                 from /home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/include/MapPoint.h:23,
+                 from /home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/include/FrameDrawer.h:24,
+                 from /home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/include/Viewer.h:23,
+                 from /home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/include/Tracking.h:26,
+                 from /home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/src/Tracking.cc:20:
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/Thirdparty/DBoW2/DBoW2/FClass.h:35:16: warning: ‘virtual void DBoW2::FClass::meanValue(const std::vector<const TDescriptor*>&, TDescriptor&)’ was hidden [-Woverloaded-virtual=]
+   35 |   virtual void meanValue(const std::vector<pDescriptor> &descriptors,
+      |                ^~~~~~~~~
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/Thirdparty/DBoW2/DBoW2/FORB.h:38:15: note:   by ‘static void DBoW2::FORB::meanValue(const std::vector<const cv::Mat*>&, TDescriptor&)’
+   38 |   static void meanValue(const std::vector<pDescriptor> &descriptors,
+      |               ^~~~~~~~~
+In file included from /home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/Thirdparty/DBoW2/DBoW2/FORB.h:17,
+                 from /home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/include/ORBVocabulary.h:23,
+                 from /home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/include/KeyFrame.h:26,
+                 from /home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/include/MapPoint.h:23,
+                 from /home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/include/Map.h:23,
+                 from /home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/include/Atlas.h:22,
+                 from /home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/include/MapDrawer.h:23,
+                 from /home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/include/Viewer.h:24,
+                 from /home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/include/Tracking.h:26,
+                 from /home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/include/FrameDrawer.h:23,
+                 from /home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/src/FrameDrawer.cc:19:
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/Thirdparty/DBoW2/DBoW2/FClass.h:35:16: warning: ‘virtual void DBoW2::FClass::meanValue(const std::vector<const TDescriptor*>&, TDescriptor&)’ was hidden [-Woverloaded-virtual=]
+   35 |   virtual void meanValue(const std::vector<pDescriptor> &descriptors,
+      |                ^~~~~~~~~
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/Thirdparty/DBoW2/DBoW2/FORB.h:38:15: note:   by ‘static void DBoW2::FORB::meanValue(const std::vector<const cv::Mat*>&, TDescriptor&)’
+   38 |   static void meanValue(const std::vector<pDescriptor> &descriptors,
+      |               ^~~~~~~~~
+In file included from /home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/Thirdparty/DBoW2/DBoW2/FORB.h:17,
+                 from /home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/include/ORBVocabulary.h:23,
+                 from /home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/include/KeyFrame.h:26,
+                 from /home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/include/MapPoint.h:23,
+                 from /home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/include/ORBmatcher.h:28,
+                 from /home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/src/ORBmatcher.cc:20:
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/Thirdparty/DBoW2/DBoW2/FClass.h:35:16: warning: ‘virtual void DBoW2::FClass::meanValue(const std::vector<const TDescriptor*>&, TDescriptor&)’ was hidden [-Woverloaded-virtual=]
+   35 |   virtual void meanValue(const std::vector<pDescriptor> &descriptors,
+      |                ^~~~~~~~~
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/Thirdparty/DBoW2/DBoW2/FORB.h:38:15: note:   by ‘static void DBoW2::FORB::meanValue(const std::vector<const cv::Mat*>&, TDescriptor&)’
+   38 |   static void meanValue(const std::vector<pDescriptor> &descriptors,
+      |               ^~~~~~~~~
+In file included from /home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/include/Frame.h:30,
+                 from /home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/include/KeyFrame.h:28:
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/include/ImuTypes.h: In member function ‘void ORB_SLAM3::IMU::Preintegrated::printMeasurements() const’:
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/include/ImuTypes.h:204:23: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<ORB_SLAM3::IMU::Preintegrated::integrable>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+  204 |         for(int i=0; i<mvMeasurements.size(); i++){
+      |                      ~^~~~~~~~~~~~~~~~~~~~~~
+In file included from /home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:37,
+                 from /home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/include/Converter.h:26,
+                 from /home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/include/Frame.h:33:
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/../core/base_vertex.h: At global scope:
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/../core/base_vertex.h:62:74: warning: ‘Eigen::AlignedBit’ is deprecated [-Wdeprecated-declarations]
+   62 |     typedef Eigen::Map<Matrix<double, D, D>, Matrix<double,D,D>::Flags & AlignedBit ? Aligned : Unaligned >  HessianBlockType;
+      |                                                                          ^~~~~~~~~~
+In file included from /usr/include/eigen3/Eigen/Core:161,
+                 from /usr/include/eigen3/Eigen/Dense:1,
+                 from /home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/Thirdparty/Sophus/sophus/rotation_matrix.hpp:7,
+                 from /home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/Thirdparty/Sophus/sophus/so3.hpp:7,
+                 from /home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/Thirdparty/Sophus/sophus/rxso3.hpp:7,
+                 from /home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/Thirdparty/Sophus/sophus/sim3.hpp:7,
+                 from /home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/include/ORBmatcher.h:26:
+/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37: note: declared here
+  167 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      |                                     ^~~~~~~~~~
+In file included from /home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:38:
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:59:82: warning: ‘Eigen::AlignedBit’ is deprecated [-Wdeprecated-declarations]
+   59 |       typedef Eigen::Map<Matrix<double, Di, Dj>, Matrix<double, Di, Dj>::Flags & AlignedBit ? Aligned : Unaligned > HessianBlockType;
+      |                                                                                  ^~~~~~~~~~
+/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37: note: declared here
+  167 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      |                                     ^~~~~~~~~~
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:60:82: warning: ‘Eigen::AlignedBit’ is deprecated [-Wdeprecated-declarations]
+   60 |       typedef Eigen::Map<Matrix<double, Dj, Di>, Matrix<double, Dj, Di>::Flags & AlignedBit ? Aligned : Unaligned > HessianBlockTransposedType;
+      |                                                                                  ^~~~~~~~~~
+/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37: note: declared here
+  167 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      |                                     ^~~~~~~~~~
+In file included from /home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/include/Frame.h:30,
+                 from /home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/include/KeyFrame.h:28:
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/include/ImuTypes.h: In member function ‘void ORB_SLAM3::IMU::Preintegrated::printMeasurements() const’:
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/include/ImuTypes.h:204:23: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<ORB_SLAM3::IMU::Preintegrated::integrable>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+  204 |         for(int i=0; i<mvMeasurements.size(); i++){
+      |                      ~^~~~~~~~~~~~~~~~~~~~~~
+In file included from /home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:37,
+                 from /home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/include/Converter.h:26,
+                 from /home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/include/Frame.h:33:
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/../core/base_vertex.h: At global scope:
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/../core/base_vertex.h:62:74: warning: ‘Eigen::AlignedBit’ is deprecated [-Wdeprecated-declarations]
+   62 |     typedef Eigen::Map<Matrix<double, D, D>, Matrix<double,D,D>::Flags & AlignedBit ? Aligned : Unaligned >  HessianBlockType;
+      |                                                                          ^~~~~~~~~~
+In file included from /usr/include/eigen3/Eigen/Core:161,
+                 from /usr/include/eigen3/Eigen/LU:11,
+                 from /home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/Thirdparty/Sophus/sophus/so2.hpp:12,
+                 from /home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/Thirdparty/Sophus/sophus/se2.hpp:7,
+                 from /home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/Thirdparty/Sophus/sophus/geometry.hpp:7,
+                 from /home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/include/Frame.h:28:
+/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37: note: declared here
+  167 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      |                                     ^~~~~~~~~~
+In file included from /home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:38:
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:59:82: warning: ‘Eigen::AlignedBit’ is deprecated [-Wdeprecated-declarations]
+   59 |       typedef Eigen::Map<Matrix<double, Di, Dj>, Matrix<double, Di, Dj>::Flags & AlignedBit ? Aligned : Unaligned > HessianBlockType;
+      |                                                                                  ^~~~~~~~~~
+/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37: note: declared here
+  167 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      |                                     ^~~~~~~~~~
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:60:82: warning: ‘Eigen::AlignedBit’ is deprecated [-Wdeprecated-declarations]
+   60 |       typedef Eigen::Map<Matrix<double, Dj, Di>, Matrix<double, Dj, Di>::Flags & AlignedBit ? Aligned : Unaligned > HessianBlockTransposedType;
+      |                                                                                  ^~~~~~~~~~
+/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37: note: declared here
+  167 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      |                                     ^~~~~~~~~~
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/../core/base_vertex.h: In instantiation of ‘class g2o::BaseVertex<3, Eigen::Matrix<double, 3, 1> >’:
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/types_sba.h:40:35:   required from here
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/../core/base_vertex.h:62:72: warning: ‘Eigen::AlignedBit’ is deprecated [-Wdeprecated-declarations]
+   62 |     typedef Eigen::Map<Matrix<double, D, D>, Matrix<double,D,D>::Flags & AlignedBit ? Aligned : Unaligned >  HessianBlockType;
+      |                                                                  ~~~~~~^~~~~~~~~~~~
+/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37: note: declared here
+  167 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      |                                     ^~~~~~~~~~
+In file included from /home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/include/Frame.h:30,
+                 from /home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/include/KeyFrame.h:28:
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/include/ImuTypes.h: In member function ‘void ORB_SLAM3::IMU::Preintegrated::printMeasurements() const’:
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/include/ImuTypes.h:204:23: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<ORB_SLAM3::IMU::Preintegrated::integrable>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+  204 |         for(int i=0; i<mvMeasurements.size(); i++){
+      |                      ~^~~~~~~~~~~~~~~~~~~~~~
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/../core/base_vertex.h: In instantiation of ‘class g2o::BaseVertex<6, g2o::SE3Quat>’:
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:59:33:   required from here
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/../core/base_vertex.h:62:72: warning: ‘Eigen::AlignedBit’ is deprecated [-Wdeprecated-declarations]
+   62 |     typedef Eigen::Map<Matrix<double, D, D>, Matrix<double,D,D>::Flags & AlignedBit ? Aligned : Unaligned >  HessianBlockType;
+      |                                                                  ~~~~~~^~~~~~~~~~~~
+/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37: note: declared here
+  167 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      |                                     ^~~~~~~~~~
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h: In instantiation of ‘class g2o::BaseBinaryEdge<6, g2o::SE3Quat, g2o::VertexSE3Expmap, g2o::VertexSE3Expmap>’:
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:83:24:   required from here
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:59:80: warning: ‘Eigen::AlignedBit’ is deprecated [-Wdeprecated-declarations]
+   59 |       typedef Eigen::Map<Matrix<double, Di, Dj>, Matrix<double, Di, Dj>::Flags & AlignedBit ? Aligned : Unaligned > HessianBlockType;
+      |                                                                          ~~~~~~^~~~~~~~~~~~
+/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37: note: declared here
+  167 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      |                                     ^~~~~~~~~~
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:60:80: warning: ‘Eigen::AlignedBit’ is deprecated [-Wdeprecated-declarations]
+   60 |       typedef Eigen::Map<Matrix<double, Dj, Di>, Matrix<double, Dj, Di>::Flags & AlignedBit ? Aligned : Unaligned > HessianBlockTransposedType;
+      |                                                                          ~~~~~~^~~~~~~~~~~~
+/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37: note: declared here
+  167 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      |                                     ^~~~~~~~~~
+In file included from /home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:37,
+                 from /home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/include/Converter.h:26,
+                 from /home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/include/Frame.h:33:
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/../core/base_vertex.h: At global scope:
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/../core/base_vertex.h:62:74: warning: ‘Eigen::AlignedBit’ is deprecated [-Wdeprecated-declarations]
+   62 |     typedef Eigen::Map<Matrix<double, D, D>, Matrix<double,D,D>::Flags & AlignedBit ? Aligned : Unaligned >  HessianBlockType;
+      |                                                                          ^~~~~~~~~~
+In file included from /usr/include/eigen3/Eigen/Core:161,
+                 from /usr/include/eigen3/Eigen/LU:11,
+                 from /home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/Thirdparty/Sophus/sophus/so2.hpp:12,
+                 from /home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/Thirdparty/Sophus/sophus/se2.hpp:7,
+                 from /home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/Thirdparty/Sophus/sophus/geometry.hpp:7,
+                 from /home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/include/Frame.h:28:
+/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37: note: declared here
+  167 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      |                                     ^~~~~~~~~~
+In file included from /home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:38:
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:59:82: warning: ‘Eigen::AlignedBit’ is deprecated [-Wdeprecated-declarations]
+   59 |       typedef Eigen::Map<Matrix<double, Di, Dj>, Matrix<double, Di, Dj>::Flags & AlignedBit ? Aligned : Unaligned > HessianBlockType;
+      |                                                                                  ^~~~~~~~~~
+/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37: note: declared here
+  167 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      |                                     ^~~~~~~~~~
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:60:82: warning: ‘Eigen::AlignedBit’ is deprecated [-Wdeprecated-declarations]
+   60 |       typedef Eigen::Map<Matrix<double, Dj, Di>, Matrix<double, Dj, Di>::Flags & AlignedBit ? Aligned : Unaligned > HessianBlockTransposedType;
+      |                                                                                  ^~~~~~~~~~
+/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37: note: declared here
+  167 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      |                                     ^~~~~~~~~~
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h: In instantiation of ‘class g2o::BaseBinaryEdge<2, Eigen::Matrix<double, 2, 1>, g2o::VertexSBAPointXYZ, g2o::VertexSE3Expmap>’:
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:114:35:   required from here
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:59:80: warning: ‘Eigen::AlignedBit’ is deprecated [-Wdeprecated-declarations]
+   59 |       typedef Eigen::Map<Matrix<double, Di, Dj>, Matrix<double, Di, Dj>::Flags & AlignedBit ? Aligned : Unaligned > HessianBlockType;
+      |                                                                          ~~~~~~^~~~~~~~~~~~
+/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37: note: declared here
+  167 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      |                                     ^~~~~~~~~~
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:60:80: warning: ‘Eigen::AlignedBit’ is deprecated [-Wdeprecated-declarations]
+   60 |       typedef Eigen::Map<Matrix<double, Dj, Di>, Matrix<double, Dj, Di>::Flags & AlignedBit ? Aligned : Unaligned > HessianBlockTransposedType;
+      |                                                                          ~~~~~~^~~~~~~~~~~~
+/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37: note: declared here
+  167 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      |                                     ^~~~~~~~~~
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h: In instantiation of ‘class g2o::BaseBinaryEdge<3, Eigen::Matrix<double, 3, 1>, g2o::VertexSBAPointXYZ, g2o::VertexSE3Expmap>’:
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:146:41:   required from here
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:59:80: warning: ‘Eigen::AlignedBit’ is deprecated [-Wdeprecated-declarations]
+   59 |       typedef Eigen::Map<Matrix<double, Di, Dj>, Matrix<double, Di, Dj>::Flags & AlignedBit ? Aligned : Unaligned > HessianBlockType;
+      |                                                                          ~~~~~~^~~~~~~~~~~~
+/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37: note: declared here
+  167 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      |                                     ^~~~~~~~~~
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:60:80: warning: ‘Eigen::AlignedBit’ is deprecated [-Wdeprecated-declarations]
+   60 |       typedef Eigen::Map<Matrix<double, Dj, Di>, Matrix<double, Dj, Di>::Flags & AlignedBit ? Aligned : Unaligned > HessianBlockTransposedType;
+      |                                                                          ~~~~~~^~~~~~~~~~~~
+/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37: note: declared here
+  167 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      |                                     ^~~~~~~~~~
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/../core/base_vertex.h: In instantiation of ‘class g2o::BaseVertex<7, g2o::Sim3>’:
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/types_seven_dof_expmap.h:48:35:   required from here
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/../core/base_vertex.h:62:72: warning: ‘Eigen::AlignedBit’ is deprecated [-Wdeprecated-declarations]
+   62 |     typedef Eigen::Map<Matrix<double, D, D>, Matrix<double,D,D>::Flags & AlignedBit ? Aligned : Unaligned >  HessianBlockType;
+      |                                                                  ~~~~~~^~~~~~~~~~~~
+/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37: note: declared here
+  167 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      |                                     ^~~~~~~~~~
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h: In instantiation of ‘class g2o::BaseBinaryEdge<7, g2o::Sim3, g2o::VertexSim3Expmap, g2o::VertexSim3Expmap>’:
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/types_seven_dof_expmap.h:99:27:   required from here
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:59:80: warning: ‘Eigen::AlignedBit’ is deprecated [-Wdeprecated-declarations]
+   59 |       typedef Eigen::Map<Matrix<double, Di, Dj>, Matrix<double, Di, Dj>::Flags & AlignedBit ? Aligned : Unaligned > HessianBlockType;
+      |                                                                          ~~~~~~^~~~~~~~~~~~
+/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37: note: declared here
+  167 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      |                                     ^~~~~~~~~~
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:60:80: warning: ‘Eigen::AlignedBit’ is deprecated [-Wdeprecated-declarations]
+   60 |       typedef Eigen::Map<Matrix<double, Dj, Di>, Matrix<double, Dj, Di>::Flags & AlignedBit ? Aligned : Unaligned > HessianBlockTransposedType;
+      |                                                                          ~~~~~~^~~~~~~~~~~~
+/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37: note: declared here
+  167 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      |                                     ^~~~~~~~~~
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/../core/base_vertex.h: In instantiation of ‘class g2o::BaseVertex<3, Eigen::Matrix<double, 3, 1> >’:
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/types_sba.h:40:35:   required from here
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/../core/base_vertex.h:62:72: warning: ‘Eigen::AlignedBit’ is deprecated [-Wdeprecated-declarations]
+   62 |     typedef Eigen::Map<Matrix<double, D, D>, Matrix<double,D,D>::Flags & AlignedBit ? Aligned : Unaligned >  HessianBlockType;
+      |                                                                  ~~~~~~^~~~~~~~~~~~
+/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37: note: declared here
+  167 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      |                                     ^~~~~~~~~~
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h: In instantiation of ‘class g2o::BaseBinaryEdge<2, Eigen::Matrix<double, 2, 1>, g2o::VertexSBAPointXYZ, g2o::VertexSim3Expmap>’:
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/types_seven_dof_expmap.h:130:36:   required from here
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:59:80: warning: ‘Eigen::AlignedBit’ is deprecated [-Wdeprecated-declarations]
+   59 |       typedef Eigen::Map<Matrix<double, Di, Dj>, Matrix<double, Di, Dj>::Flags & AlignedBit ? Aligned : Unaligned > HessianBlockType;
+      |                                                                          ~~~~~~^~~~~~~~~~~~
+/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37: note: declared here
+  167 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      |                                     ^~~~~~~~~~
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/../core/base_vertex.h: In instantiation of ‘class g2o::BaseVertex<6, g2o::SE3Quat>’:
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:59:33:   required from here
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/../core/base_vertex.h:62:72: warning: ‘Eigen::AlignedBit’ is deprecated [-Wdeprecated-declarations]
+   62 |     typedef Eigen::Map<Matrix<double, D, D>, Matrix<double,D,D>::Flags & AlignedBit ? Aligned : Unaligned >  HessianBlockType;
+      |                                                                  ~~~~~~^~~~~~~~~~~~
+/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37: note: declared here
+  167 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      |                                     ^~~~~~~~~~
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:60:80: warning: ‘Eigen::AlignedBit’ is deprecated [-Wdeprecated-declarations]
+   60 |       typedef Eigen::Map<Matrix<double, Dj, Di>, Matrix<double, Dj, Di>::Flags & AlignedBit ? Aligned : Unaligned > HessianBlockTransposedType;
+      |                                                                          ~~~~~~^~~~~~~~~~~~
+/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37: note: declared here
+  167 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      |                                     ^~~~~~~~~~
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h: In instantiation of ‘class g2o::BaseBinaryEdge<6, g2o::SE3Quat, g2o::VertexSE3Expmap, g2o::VertexSE3Expmap>’:
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:83:24:   required from here
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:59:80: warning: ‘Eigen::AlignedBit’ is deprecated [-Wdeprecated-declarations]
+   59 |       typedef Eigen::Map<Matrix<double, Di, Dj>, Matrix<double, Di, Dj>::Flags & AlignedBit ? Aligned : Unaligned > HessianBlockType;
+      |                                                                          ~~~~~~^~~~~~~~~~~~
+/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37: note: declared here
+  167 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      |                                     ^~~~~~~~~~
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:60:80: warning: ‘Eigen::AlignedBit’ is deprecated [-Wdeprecated-declarations]
+   60 |       typedef Eigen::Map<Matrix<double, Dj, Di>, Matrix<double, Dj, Di>::Flags & AlignedBit ? Aligned : Unaligned > HessianBlockTransposedType;
+      |                                                                          ~~~~~~^~~~~~~~~~~~
+/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37: note: declared here
+  167 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      |                                     ^~~~~~~~~~
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h: In instantiation of ‘class g2o::BaseBinaryEdge<2, Eigen::Matrix<double, 2, 1>, g2o::VertexSBAPointXYZ, g2o::VertexSE3Expmap>’:
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:114:35:   required from here
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:59:80: warning: ‘Eigen::AlignedBit’ is deprecated [-Wdeprecated-declarations]
+   59 |       typedef Eigen::Map<Matrix<double, Di, Dj>, Matrix<double, Di, Dj>::Flags & AlignedBit ? Aligned : Unaligned > HessianBlockType;
+      |                                                                          ~~~~~~^~~~~~~~~~~~
+/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37: note: declared here
+  167 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      |                                     ^~~~~~~~~~
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:60:80: warning: ‘Eigen::AlignedBit’ is deprecated [-Wdeprecated-declarations]
+   60 |       typedef Eigen::Map<Matrix<double, Dj, Di>, Matrix<double, Dj, Di>::Flags & AlignedBit ? Aligned : Unaligned > HessianBlockTransposedType;
+      |                                                                          ~~~~~~^~~~~~~~~~~~
+/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37: note: declared here
+  167 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      |                                     ^~~~~~~~~~
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h: In instantiation of ‘class g2o::BaseBinaryEdge<3, Eigen::Matrix<double, 3, 1>, g2o::VertexSBAPointXYZ, g2o::VertexSE3Expmap>’:
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:146:41:   required from here
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:59:80: warning: ‘Eigen::AlignedBit’ is deprecated [-Wdeprecated-declarations]
+   59 |       typedef Eigen::Map<Matrix<double, Di, Dj>, Matrix<double, Di, Dj>::Flags & AlignedBit ? Aligned : Unaligned > HessianBlockType;
+      |                                                                          ~~~~~~^~~~~~~~~~~~
+/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37: note: declared here
+  167 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      |                                     ^~~~~~~~~~
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:60:80: warning: ‘Eigen::AlignedBit’ is deprecated [-Wdeprecated-declarations]
+   60 |       typedef Eigen::Map<Matrix<double, Dj, Di>, Matrix<double, Dj, Di>::Flags & AlignedBit ? Aligned : Unaligned > HessianBlockTransposedType;
+      |                                                                          ~~~~~~^~~~~~~~~~~~
+/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37: note: declared here
+  167 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      |                                     ^~~~~~~~~~
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/../core/base_vertex.h: In instantiation of ‘class g2o::BaseVertex<3, Eigen::Matrix<double, 3, 1> >’:
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/types_sba.h:40:35:   required from here
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/../core/base_vertex.h:62:72: warning: ‘Eigen::AlignedBit’ is deprecated [-Wdeprecated-declarations]
+   62 |     typedef Eigen::Map<Matrix<double, D, D>, Matrix<double,D,D>::Flags & AlignedBit ? Aligned : Unaligned >  HessianBlockType;
+      |                                                                  ~~~~~~^~~~~~~~~~~~
+/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37: note: declared here
+  167 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      |                                     ^~~~~~~~~~
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/../core/base_vertex.h: In instantiation of ‘class g2o::BaseVertex<6, g2o::SE3Quat>’:
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:59:33:   required from here
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/../core/base_vertex.h:62:72: warning: ‘Eigen::AlignedBit’ is deprecated [-Wdeprecated-declarations]
+   62 |     typedef Eigen::Map<Matrix<double, D, D>, Matrix<double,D,D>::Flags & AlignedBit ? Aligned : Unaligned >  HessianBlockType;
+      |                                                                  ~~~~~~^~~~~~~~~~~~
+/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37: note: declared here
+  167 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      |                                     ^~~~~~~~~~
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h: In instantiation of ‘class g2o::BaseBinaryEdge<6, g2o::SE3Quat, g2o::VertexSE3Expmap, g2o::VertexSE3Expmap>’:
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:83:24:   required from here
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:59:80: warning: ‘Eigen::AlignedBit’ is deprecated [-Wdeprecated-declarations]
+   59 |       typedef Eigen::Map<Matrix<double, Di, Dj>, Matrix<double, Di, Dj>::Flags & AlignedBit ? Aligned : Unaligned > HessianBlockType;
+      |                                                                          ~~~~~~^~~~~~~~~~~~
+/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37: note: declared here
+  167 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      |                                     ^~~~~~~~~~
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:60:80: warning: ‘Eigen::AlignedBit’ is deprecated [-Wdeprecated-declarations]
+   60 |       typedef Eigen::Map<Matrix<double, Dj, Di>, Matrix<double, Dj, Di>::Flags & AlignedBit ? Aligned : Unaligned > HessianBlockTransposedType;
+      |                                                                          ~~~~~~^~~~~~~~~~~~
+/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37: note: declared here
+  167 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      |                                     ^~~~~~~~~~
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h: In instantiation of ‘class g2o::BaseBinaryEdge<2, Eigen::Matrix<double, 2, 1>, g2o::VertexSBAPointXYZ, g2o::VertexSE3Expmap>’:
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:114:35:   required from here
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:59:80: warning: ‘Eigen::AlignedBit’ is deprecated [-Wdeprecated-declarations]
+   59 |       typedef Eigen::Map<Matrix<double, Di, Dj>, Matrix<double, Di, Dj>::Flags & AlignedBit ? Aligned : Unaligned > HessianBlockType;
+      |                                                                          ~~~~~~^~~~~~~~~~~~
+/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37: note: declared here
+  167 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      |                                     ^~~~~~~~~~
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:60:80: warning: ‘Eigen::AlignedBit’ is deprecated [-Wdeprecated-declarations]
+   60 |       typedef Eigen::Map<Matrix<double, Dj, Di>, Matrix<double, Dj, Di>::Flags & AlignedBit ? Aligned : Unaligned > HessianBlockTransposedType;
+      |                                                                          ~~~~~~^~~~~~~~~~~~
+/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37: note: declared here
+  167 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      |                                     ^~~~~~~~~~
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/../core/base_vertex.h: In instantiation of ‘class g2o::BaseVertex<7, g2o::Sim3>’:
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/types_seven_dof_expmap.h:48:35:   required from here
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/../core/base_vertex.h:62:72: warning: ‘Eigen::AlignedBit’ is deprecated [-Wdeprecated-declarations]
+   62 |     typedef Eigen::Map<Matrix<double, D, D>, Matrix<double,D,D>::Flags & AlignedBit ? Aligned : Unaligned >  HessianBlockType;
+      |                                                                  ~~~~~~^~~~~~~~~~~~
+/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37: note: declared here
+  167 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      |                                     ^~~~~~~~~~
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h: In instantiation of ‘class g2o::BaseBinaryEdge<3, Eigen::Matrix<double, 3, 1>, g2o::VertexSBAPointXYZ, g2o::VertexSE3Expmap>’:
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:146:41:   required from here
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:59:80: warning: ‘Eigen::AlignedBit’ is deprecated [-Wdeprecated-declarations]
+   59 |       typedef Eigen::Map<Matrix<double, Di, Dj>, Matrix<double, Di, Dj>::Flags & AlignedBit ? Aligned : Unaligned > HessianBlockType;
+      |                                                                          ~~~~~~^~~~~~~~~~~~
+/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37: note: declared here
+  167 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      |                                     ^~~~~~~~~~
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:60:80: warning: ‘Eigen::AlignedBit’ is deprecated [-Wdeprecated-declarations]
+   60 |       typedef Eigen::Map<Matrix<double, Dj, Di>, Matrix<double, Dj, Di>::Flags & AlignedBit ? Aligned : Unaligned > HessianBlockTransposedType;
+      |                                                                          ~~~~~~^~~~~~~~~~~~
+/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37: note: declared here
+  167 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      |                                     ^~~~~~~~~~
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h: In instantiation of ‘class g2o::BaseBinaryEdge<7, g2o::Sim3, g2o::VertexSim3Expmap, g2o::VertexSim3Expmap>’:
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/types_seven_dof_expmap.h:99:27:   required from here
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:59:80: warning: ‘Eigen::AlignedBit’ is deprecated [-Wdeprecated-declarations]
+   59 |       typedef Eigen::Map<Matrix<double, Di, Dj>, Matrix<double, Di, Dj>::Flags & AlignedBit ? Aligned : Unaligned > HessianBlockType;
+      |                                                                          ~~~~~~^~~~~~~~~~~~
+/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37: note: declared here
+  167 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      |                                     ^~~~~~~~~~
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:60:80: warning: ‘Eigen::AlignedBit’ is deprecated [-Wdeprecated-declarations]
+   60 |       typedef Eigen::Map<Matrix<double, Dj, Di>, Matrix<double, Dj, Di>::Flags & AlignedBit ? Aligned : Unaligned > HessianBlockTransposedType;
+      |                                                                          ~~~~~~^~~~~~~~~~~~
+/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37: note: declared here
+  167 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      |                                     ^~~~~~~~~~
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h: In instantiation of ‘class g2o::BaseBinaryEdge<2, Eigen::Matrix<double, 2, 1>, g2o::VertexSBAPointXYZ, g2o::VertexSim3Expmap>’:
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/types_seven_dof_expmap.h:130:36:   required from here
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:59:80: warning: ‘Eigen::AlignedBit’ is deprecated [-Wdeprecated-declarations]
+   59 |       typedef Eigen::Map<Matrix<double, Di, Dj>, Matrix<double, Di, Dj>::Flags & AlignedBit ? Aligned : Unaligned > HessianBlockType;
+      |                                                                          ~~~~~~^~~~~~~~~~~~
+/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37: note: declared here
+  167 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      |                                     ^~~~~~~~~~
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:60:80: warning: ‘Eigen::AlignedBit’ is deprecated [-Wdeprecated-declarations]
+   60 |       typedef Eigen::Map<Matrix<double, Dj, Di>, Matrix<double, Dj, Di>::Flags & AlignedBit ? Aligned : Unaligned > HessianBlockTransposedType;
+      |                                                                          ~~~~~~^~~~~~~~~~~~
+/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37: note: declared here
+  167 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      |                                     ^~~~~~~~~~
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/../core/base_vertex.h: In instantiation of ‘class g2o::BaseVertex<7, g2o::Sim3>’:
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/types_seven_dof_expmap.h:48:35:   required from here
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/../core/base_vertex.h:62:72: warning: ‘Eigen::AlignedBit’ is deprecated [-Wdeprecated-declarations]
+   62 |     typedef Eigen::Map<Matrix<double, D, D>, Matrix<double,D,D>::Flags & AlignedBit ? Aligned : Unaligned >  HessianBlockType;
+      |                                                                  ~~~~~~^~~~~~~~~~~~
+/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37: note: declared here
+  167 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      |                                     ^~~~~~~~~~
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h: In instantiation of ‘class g2o::BaseBinaryEdge<7, g2o::Sim3, g2o::VertexSim3Expmap, g2o::VertexSim3Expmap>’:
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/types_seven_dof_expmap.h:99:27:   required from here
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:59:80: warning: ‘Eigen::AlignedBit’ is deprecated [-Wdeprecated-declarations]
+   59 |       typedef Eigen::Map<Matrix<double, Di, Dj>, Matrix<double, Di, Dj>::Flags & AlignedBit ? Aligned : Unaligned > HessianBlockType;
+      |                                                                          ~~~~~~^~~~~~~~~~~~
+/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37: note: declared here
+  167 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      |                                     ^~~~~~~~~~
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:60:80: warning: ‘Eigen::AlignedBit’ is deprecated [-Wdeprecated-declarations]
+   60 |       typedef Eigen::Map<Matrix<double, Dj, Di>, Matrix<double, Dj, Di>::Flags & AlignedBit ? Aligned : Unaligned > HessianBlockTransposedType;
+      |                                                                          ~~~~~~^~~~~~~~~~~~
+/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37: note: declared here
+  167 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      |                                     ^~~~~~~~~~
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h: In instantiation of ‘class g2o::BaseBinaryEdge<2, Eigen::Matrix<double, 2, 1>, g2o::VertexSBAPointXYZ, g2o::VertexSim3Expmap>’:
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/types_seven_dof_expmap.h:130:36:   required from here
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:59:80: warning: ‘Eigen::AlignedBit’ is deprecated [-Wdeprecated-declarations]
+   59 |       typedef Eigen::Map<Matrix<double, Di, Dj>, Matrix<double, Di, Dj>::Flags & AlignedBit ? Aligned : Unaligned > HessianBlockType;
+      |                                                                          ~~~~~~^~~~~~~~~~~~
+/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37: note: declared here
+  167 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      |                                     ^~~~~~~~~~
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:60:80: warning: ‘Eigen::AlignedBit’ is deprecated [-Wdeprecated-declarations]
+   60 |       typedef Eigen::Map<Matrix<double, Dj, Di>, Matrix<double, Dj, Di>::Flags & AlignedBit ? Aligned : Unaligned > HessianBlockTransposedType;
+      |                                                                          ~~~~~~^~~~~~~~~~~~
+/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37: note: declared here
+  167 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      |                                     ^~~~~~~~~~
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/src/ORBmatcher.cc: In member function ‘int ORB_SLAM3::ORBmatcher::SearchByProjection(ORB_SLAM3::Frame&, const std::vector<ORB_SLAM3::MapPoint*>&, float, bool, float)’:
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/src/ORBmatcher.cc:109:64: warning: comparison of integer expressions of different signedness: ‘const size_t’ {aka ‘const long unsigned int’} and ‘int’ [-Wsign-compare]
+  109 |                                                         : (idx < F.Nleft) ? F.mvKeys[idx].octave
+      |                                                            ~~~~^~~~~~~~~
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/src/ORBmatcher.cc:116:65: warning: comparison of integer expressions of different signedness: ‘const size_t’ {aka ‘const long unsigned int’} and ‘int’ [-Wsign-compare]
+  116 |                                                          : (idx < F.Nleft) ? F.mvKeys[idx].octave
+      |                                                             ~~~~^~~~~~~~~
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/src/ORBmatcher.cc: In member function ‘int ORB_SLAM3::ORBmatcher::SearchByBoW(ORB_SLAM3::KeyFrame*, ORB_SLAM3::Frame&, std::vector<ORB_SLAM3::MapPoint*>&)’:
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/src/ORBmatcher.cc:306:41: warning: comparison of integer expressions of different signedness: ‘const unsigned int’ and ‘int’ [-Wsign-compare]
+  306 |                             if(realIdxF < F.Nleft && dist<bestDist1){
+      |                                ~~~~~~~~~^~~~~~~~~
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/src/ORBmatcher.cc:311:46: warning: comparison of integer expressions of different signedness: ‘const unsigned int’ and ‘int’ [-Wsign-compare]
+  311 |                             else if(realIdxF < F.Nleft && dist<bestDist2){
+      |                                     ~~~~~~~~~^~~~~~~~~
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/src/ORBmatcher.cc:315:41: warning: comparison of integer expressions of different signedness: ‘const unsigned int’ and ‘int’ [-Wsign-compare]
+  315 |                             if(realIdxF >= F.Nleft && dist<bestDist1R){
+      |                                ~~~~~~~~~^~~~~~~~~~
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/src/ORBmatcher.cc:320:46: warning: comparison of integer expressions of different signedness: ‘const unsigned int’ and ‘int’ [-Wsign-compare]
+  320 |                             else if(realIdxF >= F.Nleft && dist<bestDist2R){
+      |                                     ~~~~~~~~~^~~~~~~~~~
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/src/ORBmatcher.cc:335:48: warning: comparison of integer expressions of different signedness: ‘const unsigned int’ and ‘const int’ [-Wsign-compare]
+  335 |                                     (realIdxKF >= pKF -> NLeft) ? pKF -> mvKeysRight[realIdxKF - pKF -> NLeft]
+      |                                      ~~~~~~~~~~^~~~~~~~~~~~~~~
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/src/ORBmatcher.cc:365:52: warning: comparison of integer expressions of different signedness: ‘const unsigned int’ and ‘const int’ [-Wsign-compare]
+  365 |                                         (realIdxKF >= pKF -> NLeft) ? pKF -> mvKeysRight[realIdxKF - pKF -> NLeft]
+      |                                          ~~~~~~~~~~^~~~~~~~~~~~~~~
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/src/ORBmatcher.cc: In member function ‘int ORB_SLAM3::ORBmatcher::SearchByProjection(ORB_SLAM3::KeyFrame*, Sophus::Sim3f&, const std::vector<ORB_SLAM3::MapPoint*>&, std::vector<ORB_SLAM3::MapPoint*>&, int, float)’:
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/src/ORBmatcher.cc:431:22: warning: unused variable ‘fx’ [-Wunused-variable]
+  431 |         const float &fx = pKF->fx;
+      |                      ^~
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/src/ORBmatcher.cc:432:22: warning: unused variable ‘fy’ [-Wunused-variable]
+  432 |         const float &fy = pKF->fy;
+      |                      ^~
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/src/ORBmatcher.cc:433:22: warning: unused variable ‘cx’ [-Wunused-variable]
+  433 |         const float &cx = pKF->cx;
+      |                      ^~
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/src/ORBmatcher.cc:434:22: warning: unused variable ‘cy’ [-Wunused-variable]
+  434 |         const float &cy = pKF->cy;
+      |                      ^~
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/src/ORBmatcher.cc: In member function ‘int ORB_SLAM3::ORBmatcher::SearchForTriangulation(ORB_SLAM3::KeyFrame*, ORB_SLAM3::KeyFrame*, std::vector<std::pair<long unsigned int, long unsigned int> >&, bool, bool)’:
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/src/ORBmatcher.cc:986:77: warning: comparison of integer expressions of different signedness: ‘const size_t’ {aka ‘const long unsigned int’} and ‘const int’ [-Wsign-compare]
+  986 |                                                                     : (idx1 < pKF1 -> NLeft) ? pKF1 -> mvKeys[idx1]
+      |                                                                        ~~~~~^~~~~~~~~~~~~~~
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/src/ORBmatcher.cc:989:71: warning: comparison of integer expressions of different signedness: ‘const size_t’ {aka ‘const long unsigned int’} and ‘const int’ [-Wsign-compare]
+  989 |                     const bool bRight1 = (pKF1 -> NLeft == -1 || idx1 < pKF1 -> NLeft) ? false
+      |                                                                  ~~~~~^~~~~~~~~~~~~~~
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/src/ORBmatcher.cc:1021:81: warning: comparison of integer expressions of different signedness: ‘size_t’ {aka ‘long unsigned int’} and ‘const int’ [-Wsign-compare]
+ 1021 |                                                                         : (idx2 < pKF2 -> NLeft) ? pKF2 -> mvKeys[idx2]
+      |                                                                            ~~~~~^~~~~~~~~~~~~~~
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/src/ORBmatcher.cc:1023:75: warning: comparison of integer expressions of different signedness: ‘size_t’ {aka ‘long unsigned int’} and ‘const int’ [-Wsign-compare]
+ 1023 |                         const bool bRight2 = (pKF2 -> NLeft == -1 || idx2 < pKF2 -> NLeft) ? false
+      |                                                                      ~~~~~^~~~~~~~~~~~~~~
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/src/ORBmatcher.cc: In member function ‘int ORB_SLAM3::ORBmatcher::Fuse(ORB_SLAM3::KeyFrame*, const std::vector<ORB_SLAM3::MapPoint*>&, float, bool)’:
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/src/ORBmatcher.cc:1165:22: warning: unused variable ‘fx’ [-Wunused-variable]
+ 1165 |         const float &fx = pKF->fx;
+      |                      ^~
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/src/ORBmatcher.cc:1166:22: warning: unused variable ‘fy’ [-Wunused-variable]
+ 1166 |         const float &fy = pKF->fy;
+      |                      ^~
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/src/ORBmatcher.cc:1167:22: warning: unused variable ‘cx’ [-Wunused-variable]
+ 1167 |         const float &cx = pKF->cx;
+      |                      ^~
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/src/ORBmatcher.cc:1168:22: warning: unused variable ‘cy’ [-Wunused-variable]
+ 1168 |         const float &cy = pKF->cy;
+      |                      ^~
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/src/ORBmatcher.cc: In member function ‘int ORB_SLAM3::ORBmatcher::Fuse(ORB_SLAM3::KeyFrame*, Sophus::Sim3f&, const std::vector<ORB_SLAM3::MapPoint*>&, float, std::vector<ORB_SLAM3::MapPoint*>&)’:
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/src/ORBmatcher.cc:1343:22: warning: unused variable ‘fx’ [-Wunused-variable]
+ 1343 |         const float &fx = pKF->fx;
+      |                      ^~
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/src/ORBmatcher.cc:1344:22: warning: unused variable ‘fy’ [-Wunused-variable]
+ 1344 |         const float &fy = pKF->fy;
+      |                      ^~
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/src/ORBmatcher.cc:1345:22: warning: unused variable ‘cx’ [-Wunused-variable]
+ 1345 |         const float &cx = pKF->cx;
+      |                      ^~
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/src/ORBmatcher.cc:1346:22: warning: unused variable ‘cy’ [-Wunused-variable]
+ 1346 |         const float &cy = pKF->cy;
+      |                      ^~
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/src/ORBmatcher.cc: In member function ‘int ORB_SLAM3::ORBmatcher::SearchByProjection(ORB_SLAM3::Frame&, const ORB_SLAM3::Frame&, float, bool)’:
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/src/ORBmatcher.cc:1706:33: warning: unused variable ‘xc’ [-Wunused-variable]
+ 1706 |                     const float xc = x3Dc(0);
+      |                                 ^~
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/src/ORBmatcher.cc:1707:33: warning: unused variable ‘yc’ [-Wunused-variable]
+ 1707 |                     const float yc = x3Dc(1);
+      |                                 ^~
+In file included from /home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/include/Atlas.h:27,
+                 from /home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/include/FrameDrawer.h:25:
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/include/CameraModels/KannalaBrandt8.h: In constructor ‘ORB_SLAM3::KannalaBrandt8::KannalaBrandt8(std::vector<float>)’:
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/include/CameraModels/KannalaBrandt8.h:102:21: warning: ‘ORB_SLAM3::KannalaBrandt8::precision’ will be initialized after [-Wreorder]
+  102 |         const float precision;
+      |                     ^~~~~~~~~
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/include/CameraModels/KannalaBrandt8.h:88:26: warning:   ‘std::vector<int> ORB_SLAM3::KannalaBrandt8::mvLappingArea’ [-Wreorder]
+   88 |         std::vector<int> mvLappingArea;
+      |                          ^~~~~~~~~~~~~
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/include/CameraModels/KannalaBrandt8.h:47:9: warning:   when initialized here [-Wreorder]
+   47 |         KannalaBrandt8(const std::vector<float> _vParameters) : GeometricCamera(_vParameters), precision(1e-6), mvLappingArea(2,0) ,tvr(nullptr) {
+      |         ^~~~~~~~~~~~~~
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/include/CameraModels/KannalaBrandt8.h: In constructor ‘ORB_SLAM3::KannalaBrandt8::KannalaBrandt8(std::vector<float>, float)’:
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/include/CameraModels/KannalaBrandt8.h:102:21: warning: ‘ORB_SLAM3::KannalaBrandt8::precision’ will be initialized after [-Wreorder]
+  102 |         const float precision;
+      |                     ^~~~~~~~~
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/include/CameraModels/KannalaBrandt8.h:88:26: warning:   ‘std::vector<int> ORB_SLAM3::KannalaBrandt8::mvLappingArea’ [-Wreorder]
+   88 |         std::vector<int> mvLappingArea;
+      |                          ^~~~~~~~~~~~~
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/include/CameraModels/KannalaBrandt8.h:53:9: warning:   when initialized here [-Wreorder]
+   53 |         KannalaBrandt8(const std::vector<float> _vParameters, const float _precision) : GeometricCamera(_vParameters),
+      |         ^~~~~~~~~~~~~~
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/include/CameraModels/KannalaBrandt8.h: In constructor ‘ORB_SLAM3::KannalaBrandt8::KannalaBrandt8(ORB_SLAM3::KannalaBrandt8*)’:
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/include/CameraModels/KannalaBrandt8.h:102:21: warning: ‘ORB_SLAM3::KannalaBrandt8::precision’ will be initialized after [-Wreorder]
+  102 |         const float precision;
+      |                     ^~~~~~~~~
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/include/CameraModels/KannalaBrandt8.h:88:26: warning:   ‘std::vector<int> ORB_SLAM3::KannalaBrandt8::mvLappingArea’ [-Wreorder]
+   88 |         std::vector<int> mvLappingArea;
+      |                          ^~~~~~~~~~~~~
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/include/CameraModels/KannalaBrandt8.h:59:9: warning:   when initialized here [-Wreorder]
+   59 |         KannalaBrandt8(KannalaBrandt8* pKannala) : GeometricCamera(pKannala->mvParameters), precision(pKannala->precision), mvLappingArea(2,0) ,tvr(nullptr) {
+      |         ^~~~~~~~~~~~~~
+In file included from /home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/include/G2oTypes.h:25,
+                 from /home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/src/Tracking.cc:25:
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/core/base_multi_edge.h: At global scope:
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/core/base_multi_edge.h:69:54: warning: ‘Eigen::AlignedBit’ is deprecated [-Wdeprecated-declarations]
+   69 |       typedef Eigen::Map<MatrixXd, MatrixXd::Flags & AlignedBit ? Aligned : Unaligned > HessianBlockType;
+      |                                                      ^~~~~~~~~~
+/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37: note: declared here
+  167 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      |                                     ^~~~~~~~~~
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/../core/base_vertex.h: In instantiation of ‘class g2o::BaseVertex<6, ORB_SLAM3::ImuCamPose>’:
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/include/G2oTypes.h:130:32:   required from here
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/../core/base_vertex.h:62:72: warning: ‘Eigen::AlignedBit’ is deprecated [-Wdeprecated-declarations]
+   62 |     typedef Eigen::Map<Matrix<double, D, D>, Matrix<double,D,D>::Flags & AlignedBit ? Aligned : Unaligned >  HessianBlockType;
+      |                                                                  ~~~~~~^~~~~~~~~~~~
+/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37: note: declared here
+  167 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      |                                     ^~~~~~~~~~
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/../core/base_vertex.h: In instantiation of ‘class g2o::BaseVertex<4, ORB_SLAM3::ImuCamPose>’:
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/include/G2oTypes.h:155:36:   required from here
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/../core/base_vertex.h:62:72: warning: ‘Eigen::AlignedBit’ is deprecated [-Wdeprecated-declarations]
+   62 |     typedef Eigen::Map<Matrix<double, D, D>, Matrix<double,D,D>::Flags & AlignedBit ? Aligned : Unaligned >  HessianBlockType;
+      |                                                                  ~~~~~~^~~~~~~~~~~~
+/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37: note: declared here
+  167 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      |                                     ^~~~~~~~~~
+In file included from /home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/include/Atlas.h:27:
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/include/CameraModels/KannalaBrandt8.h: In constructor ‘ORB_SLAM3::KannalaBrandt8::KannalaBrandt8(std::vector<float>)’:
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/include/CameraModels/KannalaBrandt8.h:102:21: warning: ‘ORB_SLAM3::KannalaBrandt8::precision’ will be initialized after [-Wreorder]
+  102 |         const float precision;
+      |                     ^~~~~~~~~
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/include/CameraModels/KannalaBrandt8.h:88:26: warning:   ‘std::vector<int> ORB_SLAM3::KannalaBrandt8::mvLappingArea’ [-Wreorder]
+   88 |         std::vector<int> mvLappingArea;
+      |                          ^~~~~~~~~~~~~
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/include/CameraModels/KannalaBrandt8.h:47:9: warning:   when initialized here [-Wreorder]
+   47 |         KannalaBrandt8(const std::vector<float> _vParameters) : GeometricCamera(_vParameters), precision(1e-6), mvLappingArea(2,0) ,tvr(nullptr) {
+      |         ^~~~~~~~~~~~~~
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/include/CameraModels/KannalaBrandt8.h: In constructor ‘ORB_SLAM3::KannalaBrandt8::KannalaBrandt8(std::vector<float>, float)’:
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/include/CameraModels/KannalaBrandt8.h:102:21: warning: ‘ORB_SLAM3::KannalaBrandt8::precision’ will be initialized after [-Wreorder]
+  102 |         const float precision;
+      |                     ^~~~~~~~~
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/include/CameraModels/KannalaBrandt8.h:88:26: warning:   ‘std::vector<int> ORB_SLAM3::KannalaBrandt8::mvLappingArea’ [-Wreorder]
+   88 |         std::vector<int> mvLappingArea;
+      |                          ^~~~~~~~~~~~~
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/include/CameraModels/KannalaBrandt8.h:53:9: warning:   when initialized here [-Wreorder]
+   53 |         KannalaBrandt8(const std::vector<float> _vParameters, const float _precision) : GeometricCamera(_vParameters),
+      |         ^~~~~~~~~~~~~~
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/include/CameraModels/KannalaBrandt8.h: In constructor ‘ORB_SLAM3::KannalaBrandt8::KannalaBrandt8(ORB_SLAM3::KannalaBrandt8*)’:
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/include/CameraModels/KannalaBrandt8.h:102:21: warning: ‘ORB_SLAM3::KannalaBrandt8::precision’ will be initialized after [-Wreorder]
+  102 |         const float precision;
+      |                     ^~~~~~~~~
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/include/CameraModels/KannalaBrandt8.h:88:26: warning:   ‘std::vector<int> ORB_SLAM3::KannalaBrandt8::mvLappingArea’ [-Wreorder]
+   88 |         std::vector<int> mvLappingArea;
+      |                          ^~~~~~~~~~~~~
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/include/CameraModels/KannalaBrandt8.h:59:9: warning:   when initialized here [-Wreorder]
+   59 |         KannalaBrandt8(KannalaBrandt8* pKannala) : GeometricCamera(pKannala->mvParameters), precision(pKannala->precision), mvLappingArea(2,0) ,tvr(nullptr) {
+      |         ^~~~~~~~~~~~~~
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/../core/base_vertex.h: In instantiation of ‘class g2o::BaseVertex<2, ORB_SLAM3::GDirection>’:
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/include/G2oTypes.h:274:32:   required from here
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/../core/base_vertex.h:62:72: warning: ‘Eigen::AlignedBit’ is deprecated [-Wdeprecated-declarations]
+   62 |     typedef Eigen::Map<Matrix<double, D, D>, Matrix<double,D,D>::Flags & AlignedBit ? Aligned : Unaligned >  HessianBlockType;
+      |                                                                  ~~~~~~^~~~~~~~~~~~
+/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37: note: declared here
+  167 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      |                                     ^~~~~~~~~~
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/../core/base_vertex.h: In instantiation of ‘class g2o::BaseVertex<1, double>’:
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/include/G2oTypes.h:296:33:   required from here
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/../core/base_vertex.h:62:72: warning: ‘Eigen::AlignedBit’ is deprecated [-Wdeprecated-declarations]
+   62 |     typedef Eigen::Map<Matrix<double, D, D>, Matrix<double,D,D>::Flags & AlignedBit ? Aligned : Unaligned >  HessianBlockType;
+      |                                                                  ~~~~~~^~~~~~~~~~~~
+/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37: note: declared here
+  167 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      |                                     ^~~~~~~~~~
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/../core/base_vertex.h: In instantiation of ‘class g2o::BaseVertex<1, ORB_SLAM3::InvDepthPoint>’:
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/include/G2oTypes.h:321:36:   required from here
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/../core/base_vertex.h:62:72: warning: ‘Eigen::AlignedBit’ is deprecated [-Wdeprecated-declarations]
+   62 |     typedef Eigen::Map<Matrix<double, D, D>, Matrix<double,D,D>::Flags & AlignedBit ? Aligned : Unaligned >  HessianBlockType;
+      |                                                                  ~~~~~~^~~~~~~~~~~~
+/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37: note: declared here
+  167 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      |                                     ^~~~~~~~~~
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h: In instantiation of ‘class g2o::BaseBinaryEdge<2, Eigen::Matrix<double, 2, 1>, g2o::VertexSBAPointXYZ, ORB_SLAM3::VertexPose>’:
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/include/G2oTypes.h:342:30:   required from here
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:59:80: warning: ‘Eigen::AlignedBit’ is deprecated [-Wdeprecated-declarations]
+   59 |       typedef Eigen::Map<Matrix<double, Di, Dj>, Matrix<double, Di, Dj>::Flags & AlignedBit ? Aligned : Unaligned > HessianBlockType;
+      |                                                                          ~~~~~~^~~~~~~~~~~~
+/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37: note: declared here
+  167 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      |                                     ^~~~~~~~~~
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:60:80: warning: ‘Eigen::AlignedBit’ is deprecated [-Wdeprecated-declarations]
+   60 |       typedef Eigen::Map<Matrix<double, Dj, Di>, Matrix<double, Dj, Di>::Flags & AlignedBit ? Aligned : Unaligned > HessianBlockTransposedType;
+      |                                                                          ~~~~~~^~~~~~~~~~~~
+/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37: note: declared here
+  167 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      |                                     ^~~~~~~~~~
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/src/FrameDrawer.cc: In member function ‘cv::Mat ORB_SLAM3::FrameDrawer::DrawFrame(float)’:
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/src/FrameDrawer.cc:47:11: warning: variable ‘thDepth’ set but not used [-Wunused-but-set-variable]
+   47 |     float thDepth;
+      |           ^~~~~~~
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h: In instantiation of ‘class g2o::BaseBinaryEdge<3, Eigen::Matrix<double, 3, 1>, g2o::VertexSBAPointXYZ, ORB_SLAM3::VertexPose>’:
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/include/G2oTypes.h:425:32:   required from here
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:59:80: warning: ‘Eigen::AlignedBit’ is deprecated [-Wdeprecated-declarations]
+   59 |       typedef Eigen::Map<Matrix<double, Di, Dj>, Matrix<double, Di, Dj>::Flags & AlignedBit ? Aligned : Unaligned > HessianBlockType;
+      |                                                                          ~~~~~~^~~~~~~~~~~~
+/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37: note: declared here
+  167 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      |                                     ^~~~~~~~~~
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:60:80: warning: ‘Eigen::AlignedBit’ is deprecated [-Wdeprecated-declarations]
+   60 |       typedef Eigen::Map<Matrix<double, Dj, Di>, Matrix<double, Dj, Di>::Flags & AlignedBit ? Aligned : Unaligned > HessianBlockTransposedType;
+      |                                                                          ~~~~~~^~~~~~~~~~~~
+/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37: note: declared here
+  167 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      |                                     ^~~~~~~~~~
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h: In instantiation of ‘class g2o::BaseBinaryEdge<3, Eigen::Matrix<double, 3, 1>, ORB_SLAM3::VertexGyroBias, ORB_SLAM3::VertexGyroBias>’:
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/include/G2oTypes.h:635:32:   required from here
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:59:80: warning: ‘Eigen::AlignedBit’ is deprecated [-Wdeprecated-declarations]
+   59 |       typedef Eigen::Map<Matrix<double, Di, Dj>, Matrix<double, Di, Dj>::Flags & AlignedBit ? Aligned : Unaligned > HessianBlockType;
+      |                                                                          ~~~~~~^~~~~~~~~~~~
+/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37: note: declared here
+  167 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      |                                     ^~~~~~~~~~
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:60:80: warning: ‘Eigen::AlignedBit’ is deprecated [-Wdeprecated-declarations]
+   60 |       typedef Eigen::Map<Matrix<double, Dj, Di>, Matrix<double, Dj, Di>::Flags & AlignedBit ? Aligned : Unaligned > HessianBlockTransposedType;
+      |                                                                          ~~~~~~^~~~~~~~~~~~
+/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37: note: declared here
+  167 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      |                                     ^~~~~~~~~~
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h: In instantiation of ‘class g2o::BaseBinaryEdge<3, Eigen::Matrix<double, 3, 1>, ORB_SLAM3::VertexAccBias, ORB_SLAM3::VertexAccBias>’:
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/include/G2oTypes.h:671:31:   required from here
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:59:80: warning: ‘Eigen::AlignedBit’ is deprecated [-Wdeprecated-declarations]
+   59 |       typedef Eigen::Map<Matrix<double, Di, Dj>, Matrix<double, Di, Dj>::Flags & AlignedBit ? Aligned : Unaligned > HessianBlockType;
+      |                                                                          ~~~~~~^~~~~~~~~~~~
+/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37: note: declared here
+  167 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      |                                     ^~~~~~~~~~
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:60:80: warning: ‘Eigen::AlignedBit’ is deprecated [-Wdeprecated-declarations]
+   60 |       typedef Eigen::Map<Matrix<double, Dj, Di>, Matrix<double, Dj, Di>::Flags & AlignedBit ? Aligned : Unaligned > HessianBlockTransposedType;
+      |                                                                          ~~~~~~^~~~~~~~~~~~
+/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37: note: declared here
+  167 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      |                                     ^~~~~~~~~~
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h: In instantiation of ‘class g2o::BaseBinaryEdge<6, Eigen::Matrix<double, 6, 1, 0, 6, 1>, ORB_SLAM3::VertexPose4DoF, ORB_SLAM3::VertexPose4DoF>’:
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/include/G2oTypes.h:817:30:   required from here
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:59:80: warning: ‘Eigen::AlignedBit’ is deprecated [-Wdeprecated-declarations]
+   59 |       typedef Eigen::Map<Matrix<double, Di, Dj>, Matrix<double, Di, Dj>::Flags & AlignedBit ? Aligned : Unaligned > HessianBlockType;
+      |                                                                          ~~~~~~^~~~~~~~~~~~
+/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37: note: declared here
+  167 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      |                                     ^~~~~~~~~~
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:60:80: warning: ‘Eigen::AlignedBit’ is deprecated [-Wdeprecated-declarations]
+   60 |       typedef Eigen::Map<Matrix<double, Dj, Di>, Matrix<double, Dj, Di>::Flags & AlignedBit ? Aligned : Unaligned > HessianBlockTransposedType;
+      |                                                                          ~~~~~~^~~~~~~~~~~~
+/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37: note: declared here
+  167 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      |                                     ^~~~~~~~~~
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/include/Tracking.h: In constructor ‘ORB_SLAM3::Tracking::Tracking(ORB_SLAM3::System*, ORB_SLAM3::ORBVocabulary*, ORB_SLAM3::FrameDrawer*, ORB_SLAM3::MapDrawer*, ORB_SLAM3::Atlas*, ORB_SLAM3::KeyFrameDatabase*, const std::string&, int, ORB_SLAM3::Settings*, const std::string&)’:
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/include/Tracking.h:290:10: warning: ‘ORB_SLAM3::Tracking::bStepByStep’ will be initialized after [-Wreorder]
+  290 |     bool bStepByStep;
+      |          ^~~~~~~~~~~
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/include/Tracking.h:288:18: warning:   ‘ORB_SLAM3::FrameDrawer* ORB_SLAM3::Tracking::mpFrameDrawer’ [-Wreorder]
+  288 |     FrameDrawer* mpFrameDrawer;
+      |                  ^~~~~~~~~~~~~
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/src/Tracking.cc:119:1: warning:   when initialized here [-Wreorder]
+  119 | Tracking::Tracking(System *pSys, ORBVocabulary* pVoc, FrameDrawer *pFrameDrawer, MapDrawer *pMapDrawer, Atlas *pAtlas, KeyFrameDatabase* pKFDB, const string &strSettingPath, const int sensor, Settings* settings, const string &_nameSeq):
+      | ^~~~~~~~
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/include/Tracking.h:335:10: warning: ‘ORB_SLAM3::Tracking::mbCreatedMap’ will be initialized after [-Wreorder]
+  335 |     bool mbCreatedMap;
+      |          ^~~~~~~~~~~~
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/include/Tracking.h:331:18: warning:   ‘unsigned int ORB_SLAM3::Tracking::mnFirstFrameId’ [-Wreorder]
+  331 |     unsigned int mnFirstFrameId;
+      |                  ^~~~~~~~~~~~~~
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/src/Tracking.cc:119:1: warning:   when initialized here [-Wreorder]
+  119 | Tracking::Tracking(System *pSys, ORBVocabulary* pVoc, FrameDrawer *pFrameDrawer, MapDrawer *pMapDrawer, Atlas *pAtlas, KeyFrameDatabase* pKFDB, const string &strSettingPath, const int sensor, Settings* settings, const string &_nameSeq):
+      | ^~~~~~~~
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/include/Tracking.h:358:33: warning: ‘ORB_SLAM3::Tracking::mpCamera2’ will be initialized after [-Wreorder]
+  358 |     GeometricCamera* mpCamera, *mpCamera2;
+      |                                 ^~~~~~~~~
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/include/Tracking.h:325:15: warning:   ‘ORB_SLAM3::KeyFrame* ORB_SLAM3::Tracking::mpLastKeyFrame’ [-Wreorder]
+  325 |     KeyFrame* mpLastKeyFrame;
+      |               ^~~~~~~~~~~~~~
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/src/Tracking.cc:119:1: warning:   when initialized here [-Wreorder]
+  119 | Tracking::Tracking(System *pSys, ORBVocabulary* pVoc, FrameDrawer *pFrameDrawer, MapDrawer *pMapDrawer, Atlas *pAtlas, KeyFrameDatabase* pKFDB, const string &strSettingPath, const int sensor, Settings* settings, const string &_nameSeq):
+      | ^~~~~~~~
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/src/Tracking.cc: In member function ‘void ORB_SLAM3::Tracking::LocalMapStats2File()’:
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/src/Tracking.cc:301:19: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<double, std::allocator<double> >::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+  301 |     for(int i=0; i<mpLocalMapper->vdLMTotal_ms.size(); ++i)
+      |                  ~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/src/Tracking.cc:313:19: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<double, std::allocator<double> >::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+  313 |     for(int i=0; i<mpLocalMapper->vdLBASync_ms.size(); ++i)
+      |                  ~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/src/Tracking.cc: In member function ‘void ORB_SLAM3::Tracking::TrackStats2File()’:
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/src/Tracking.cc:341:19: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<double, std::allocator<double> >::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+  341 |     for(int i=0; i<vdTrackTotal_ms.size(); ++i)
+      |                  ~^~~~~~~~~~~~~~~~~~~~~~~
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/src/Tracking.cc: At global scope:
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/src/Tracking.cc:374:6: error: no declaration matches ‘void ORB_SLAM3::Tracking::PublishTrackingState()’
+  374 | void Tracking::PublishTrackingState()
+      |      ^~~~~~~~
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/src/Tracking.cc:374:6: note: no functions named ‘void ORB_SLAM3::Tracking::PublishTrackingState()’
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/include/Tracking.h:56:7: note: ‘class ORB_SLAM3::Tracking’ defined here
+   56 | class Tracking
+      |       ^~~~~~~~
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/src/Tracking.cc: In member function ‘void ORB_SLAM3::Tracking::PrintTimeStats()’:
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/src/Tracking.cc:542:19: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<ORB_SLAM3::Map*>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+  542 |     for(int i=1; i<vpMaps.size(); ++i)
+      |                  ~^~~~~~~~~~~~~~
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/src/Tracking.cc: In member function ‘void ORB_SLAM3::Tracking::Track()’:
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/src/Tracking.cc:2357:96: warning: comparison of integer expressions of different signedness: ‘long unsigned int’ and ‘int’ [-Wsign-compare]
+ 2357 |         if((mCurrentFrame.mnId<(mnLastRelocFrameId+mnFramesToResetIMU)) && (mCurrentFrame.mnId > mnFramesToResetIMU) &&
+      |                                                                             ~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/src/Tracking.cc: In member function ‘void ORB_SLAM3::Tracking::SearchLocalPoints()’:
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/src/Tracking.cc:3605:13: warning: unused variable ‘matches’ [-Wunused-variable]
+ 3605 |         int matches = matcher.SearchByProjection(mCurrentFrame, mvpLocalMapPoints, th, mpLocalMapper->mbFarPoints, mpLocalMapper->mThFarPoints);
+      |             ^~~~~~~
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/src/Tracking.cc: In member function ‘void ORB_SLAM3::Tracking::UpdateFrameIMU(float, const ORB_SLAM3::IMU::Bias&, ORB_SLAM3::KeyFrame*)’:
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/src/Tracking.cc:4175:18: warning: unused variable ‘index’ [-Wunused-variable]
+ 4175 |     unsigned int index = mnFirstFrameId;
+      |                  ^~~~~
+In file included from /home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/Thirdparty/DBoW2/DBoW2/FORB.h:17,
+                 from /home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/include/ORBVocabulary.h:23,
+                 from /home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/include/KeyFrame.h:26,
+                 from /home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/include/MapPoint.h:23,
+                 from /home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/src/MapPoint.cc:19:
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/Thirdparty/DBoW2/DBoW2/FClass.h:35:16: warning: ‘virtual void DBoW2::FClass::meanValue(const std::vector<const TDescriptor*>&, TDescriptor&)’ was hidden [-Woverloaded-virtual=]
+   35 |   virtual void meanValue(const std::vector<pDescriptor> &descriptors,
+      |                ^~~~~~~~~
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/Thirdparty/DBoW2/DBoW2/FORB.h:38:15: note:   by ‘static void DBoW2::FORB::meanValue(const std::vector<const cv::Mat*>&, TDescriptor&)’
+   38 |   static void meanValue(const std::vector<pDescriptor> &descriptors,
+      |               ^~~~~~~~~
+In file included from /home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/include/Frame.h:30,
+                 from /home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/include/MapPoint.h:24,
+                 from /home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/include/KeyFrame.h:23,
+                 from /home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/src/KeyFrame.cc:19:
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/include/ImuTypes.h: In member function ‘void ORB_SLAM3::IMU::Preintegrated::printMeasurements() const’:
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/include/ImuTypes.h:204:23: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<ORB_SLAM3::IMU::Preintegrated::integrable>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+  204 |         for(int i=0; i<mvMeasurements.size(); i++){
+      |                      ~^~~~~~~~~~~~~~~~~~~~~~
+In file included from /home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/Thirdparty/DBoW2/DBoW2/FORB.h:17,
+                 from /home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/include/ORBVocabulary.h:23,
+                 from /home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/include/Frame.h:31:
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/Thirdparty/DBoW2/DBoW2/FClass.h: At global scope:
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/Thirdparty/DBoW2/DBoW2/FClass.h:35:16: warning: ‘virtual void DBoW2::FClass::meanValue(const std::vector<const TDescriptor*>&, TDescriptor&)’ was hidden [-Woverloaded-virtual=]
+   35 |   virtual void meanValue(const std::vector<pDescriptor> &descriptors,
+      |                ^~~~~~~~~
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/Thirdparty/DBoW2/DBoW2/FORB.h:38:15: note:   by ‘static void DBoW2::FORB::meanValue(const std::vector<const cv::Mat*>&, TDescriptor&)’
+   38 |   static void meanValue(const std::vector<pDescriptor> &descriptors,
+      |               ^~~~~~~~~
+In file included from /home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:37,
+                 from /home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/include/Converter.h:26,
+                 from /home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/include/Frame.h:33:
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/../core/base_vertex.h:62:74: warning: ‘Eigen::AlignedBit’ is deprecated [-Wdeprecated-declarations]
+   62 |     typedef Eigen::Map<Matrix<double, D, D>, Matrix<double,D,D>::Flags & AlignedBit ? Aligned : Unaligned >  HessianBlockType;
+      |                                                                          ^~~~~~~~~~
+In file included from /usr/include/eigen3/Eigen/Core:161,
+                 from /usr/include/eigen3/Eigen/LU:11,
+                 from /home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/Thirdparty/Sophus/sophus/so2.hpp:12,
+                 from /home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/Thirdparty/Sophus/sophus/se2.hpp:7,
+                 from /home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/Thirdparty/Sophus/sophus/geometry.hpp:7,
+                 from /home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/include/Frame.h:28:
+/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37: note: declared here
+  167 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      |                                     ^~~~~~~~~~
+In file included from /home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:38:
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:59:82: warning: ‘Eigen::AlignedBit’ is deprecated [-Wdeprecated-declarations]
+   59 |       typedef Eigen::Map<Matrix<double, Di, Dj>, Matrix<double, Di, Dj>::Flags & AlignedBit ? Aligned : Unaligned > HessianBlockType;
+      |                                                                                  ^~~~~~~~~~
+/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37: note: declared here
+  167 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      |                                     ^~~~~~~~~~
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:60:82: warning: ‘Eigen::AlignedBit’ is deprecated [-Wdeprecated-declarations]
+   60 |       typedef Eigen::Map<Matrix<double, Dj, Di>, Matrix<double, Dj, Di>::Flags & AlignedBit ? Aligned : Unaligned > HessianBlockTransposedType;
+      |                                                                                  ^~~~~~~~~~
+/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37: note: declared here
+  167 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      |                                     ^~~~~~~~~~
+In file included from /home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:37,
+                 from /home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/include/Converter.h:26,
+                 from /home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/src/Converter.cc:19:
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/../core/base_vertex.h:62:74: warning: ‘Eigen::AlignedBit’ is deprecated [-Wdeprecated-declarations]
+   62 |     typedef Eigen::Map<Matrix<double, D, D>, Matrix<double,D,D>::Flags & AlignedBit ? Aligned : Unaligned >  HessianBlockType;
+      |                                                                          ^~~~~~~~~~
+In file included from /usr/include/eigen3/Eigen/Core:161,
+                 from /usr/include/eigen3/Eigen/Dense:1,
+                 from /home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/include/Converter.h:25:
+/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37: note: declared here
+  167 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      |                                     ^~~~~~~~~~
+In file included from /home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:38:
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:59:82: warning: ‘Eigen::AlignedBit’ is deprecated [-Wdeprecated-declarations]
+   59 |       typedef Eigen::Map<Matrix<double, Di, Dj>, Matrix<double, Di, Dj>::Flags & AlignedBit ? Aligned : Unaligned > HessianBlockType;
+      |                                                                                  ^~~~~~~~~~
+/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37: note: declared here
+  167 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      |                                     ^~~~~~~~~~
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:60:82: warning: ‘Eigen::AlignedBit’ is deprecated [-Wdeprecated-declarations]
+   60 |       typedef Eigen::Map<Matrix<double, Dj, Di>, Matrix<double, Dj, Di>::Flags & AlignedBit ? Aligned : Unaligned > HessianBlockTransposedType;
+      |                                                                                  ^~~~~~~~~~
+/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37: note: declared here
+  167 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      |                                     ^~~~~~~~~~
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/../core/base_vertex.h: In instantiation of ‘class g2o::BaseVertex<3, Eigen::Matrix<double, 3, 1> >’:
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/types_sba.h:40:35:   required from here
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/../core/base_vertex.h:62:72: warning: ‘Eigen::AlignedBit’ is deprecated [-Wdeprecated-declarations]
+   62 |     typedef Eigen::Map<Matrix<double, D, D>, Matrix<double,D,D>::Flags & AlignedBit ? Aligned : Unaligned >  HessianBlockType;
+      |                                                                  ~~~~~~^~~~~~~~~~~~
+/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37: note: declared here
+  167 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      |                                     ^~~~~~~~~~
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/../core/base_vertex.h: In instantiation of ‘class g2o::BaseVertex<6, g2o::SE3Quat>’:
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:59:33:   required from here
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/../core/base_vertex.h:62:72: warning: ‘Eigen::AlignedBit’ is deprecated [-Wdeprecated-declarations]
+   62 |     typedef Eigen::Map<Matrix<double, D, D>, Matrix<double,D,D>::Flags & AlignedBit ? Aligned : Unaligned >  HessianBlockType;
+      |                                                                  ~~~~~~^~~~~~~~~~~~
+/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37: note: declared here
+  167 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      |                                     ^~~~~~~~~~
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h: In instantiation of ‘class g2o::BaseBinaryEdge<6, g2o::SE3Quat, g2o::VertexSE3Expmap, g2o::VertexSE3Expmap>’:
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:83:24:   required from here
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:59:80: warning: ‘Eigen::AlignedBit’ is deprecated [-Wdeprecated-declarations]
+   59 |       typedef Eigen::Map<Matrix<double, Di, Dj>, Matrix<double, Di, Dj>::Flags & AlignedBit ? Aligned : Unaligned > HessianBlockType;
+      |                                                                          ~~~~~~^~~~~~~~~~~~
+/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37: note: declared here
+  167 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      |                                     ^~~~~~~~~~
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:60:80: warning: ‘Eigen::AlignedBit’ is deprecated [-Wdeprecated-declarations]
+   60 |       typedef Eigen::Map<Matrix<double, Dj, Di>, Matrix<double, Dj, Di>::Flags & AlignedBit ? Aligned : Unaligned > HessianBlockTransposedType;
+      |                                                                          ~~~~~~^~~~~~~~~~~~
+/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37: note: declared here
+  167 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      |                                     ^~~~~~~~~~
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h: In instantiation of ‘class g2o::BaseBinaryEdge<2, Eigen::Matrix<double, 2, 1>, g2o::VertexSBAPointXYZ, g2o::VertexSE3Expmap>’:
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:114:35:   required from here
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:59:80: warning: ‘Eigen::AlignedBit’ is deprecated [-Wdeprecated-declarations]
+   59 |       typedef Eigen::Map<Matrix<double, Di, Dj>, Matrix<double, Di, Dj>::Flags & AlignedBit ? Aligned : Unaligned > HessianBlockType;
+      |                                                                          ~~~~~~^~~~~~~~~~~~
+/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37: note: declared here
+  167 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      |                                     ^~~~~~~~~~
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:60:80: warning: ‘Eigen::AlignedBit’ is deprecated [-Wdeprecated-declarations]
+   60 |       typedef Eigen::Map<Matrix<double, Dj, Di>, Matrix<double, Dj, Di>::Flags & AlignedBit ? Aligned : Unaligned > HessianBlockTransposedType;
+      |                                                                          ~~~~~~^~~~~~~~~~~~
+/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37: note: declared here
+  167 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      |                                     ^~~~~~~~~~
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h: In instantiation of ‘class g2o::BaseBinaryEdge<3, Eigen::Matrix<double, 3, 1>, g2o::VertexSBAPointXYZ, g2o::VertexSE3Expmap>’:
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:146:41:   required from here
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:59:80: warning: ‘Eigen::AlignedBit’ is deprecated [-Wdeprecated-declarations]
+   59 |       typedef Eigen::Map<Matrix<double, Di, Dj>, Matrix<double, Di, Dj>::Flags & AlignedBit ? Aligned : Unaligned > HessianBlockType;
+      |                                                                          ~~~~~~^~~~~~~~~~~~
+/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37: note: declared here
+  167 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      |                                     ^~~~~~~~~~
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:60:80: warning: ‘Eigen::AlignedBit’ is deprecated [-Wdeprecated-declarations]
+   60 |       typedef Eigen::Map<Matrix<double, Dj, Di>, Matrix<double, Dj, Di>::Flags & AlignedBit ? Aligned : Unaligned > HessianBlockTransposedType;
+      |                                                                          ~~~~~~^~~~~~~~~~~~
+/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37: note: declared here
+  167 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      |                                     ^~~~~~~~~~
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/../core/base_vertex.h: In instantiation of ‘class g2o::BaseVertex<3, Eigen::Matrix<double, 3, 1> >’:
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/types_sba.h:40:35:   required from here
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/../core/base_vertex.h:62:72: warning: ‘Eigen::AlignedBit’ is deprecated [-Wdeprecated-declarations]
+   62 |     typedef Eigen::Map<Matrix<double, D, D>, Matrix<double,D,D>::Flags & AlignedBit ? Aligned : Unaligned >  HessianBlockType;
+      |                                                                  ~~~~~~^~~~~~~~~~~~
+/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37: note: declared here
+  167 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      |                                     ^~~~~~~~~~
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/../core/base_vertex.h: In instantiation of ‘class g2o::BaseVertex<6, g2o::SE3Quat>’:
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:59:33:   required from here
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/../core/base_vertex.h:62:72: warning: ‘Eigen::AlignedBit’ is deprecated [-Wdeprecated-declarations]
+   62 |     typedef Eigen::Map<Matrix<double, D, D>, Matrix<double,D,D>::Flags & AlignedBit ? Aligned : Unaligned >  HessianBlockType;
+      |                                                                  ~~~~~~^~~~~~~~~~~~
+/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37: note: declared here
+  167 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      |                                     ^~~~~~~~~~
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h: In instantiation of ‘class g2o::BaseBinaryEdge<6, g2o::SE3Quat, g2o::VertexSE3Expmap, g2o::VertexSE3Expmap>’:
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:83:24:   required from here
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:59:80: warning: ‘Eigen::AlignedBit’ is deprecated [-Wdeprecated-declarations]
+   59 |       typedef Eigen::Map<Matrix<double, Di, Dj>, Matrix<double, Di, Dj>::Flags & AlignedBit ? Aligned : Unaligned > HessianBlockType;
+      |                                                                          ~~~~~~^~~~~~~~~~~~
+/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37: note: declared here
+  167 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      |                                     ^~~~~~~~~~
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:60:80: warning: ‘Eigen::AlignedBit’ is deprecated [-Wdeprecated-declarations]
+   60 |       typedef Eigen::Map<Matrix<double, Dj, Di>, Matrix<double, Dj, Di>::Flags & AlignedBit ? Aligned : Unaligned > HessianBlockTransposedType;
+      |                                                                          ~~~~~~^~~~~~~~~~~~
+/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37: note: declared here
+  167 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      |                                     ^~~~~~~~~~
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/../core/base_vertex.h: In instantiation of ‘class g2o::BaseVertex<7, g2o::Sim3>’:
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/types_seven_dof_expmap.h:48:35:   required from here
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/../core/base_vertex.h:62:72: warning: ‘Eigen::AlignedBit’ is deprecated [-Wdeprecated-declarations]
+   62 |     typedef Eigen::Map<Matrix<double, D, D>, Matrix<double,D,D>::Flags & AlignedBit ? Aligned : Unaligned >  HessianBlockType;
+      |                                                                  ~~~~~~^~~~~~~~~~~~
+/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37: note: declared here
+  167 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      |                                     ^~~~~~~~~~
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h: In instantiation of ‘class g2o::BaseBinaryEdge<7, g2o::Sim3, g2o::VertexSim3Expmap, g2o::VertexSim3Expmap>’:
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/types_seven_dof_expmap.h:99:27:   required from here
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:59:80: warning: ‘Eigen::AlignedBit’ is deprecated [-Wdeprecated-declarations]
+   59 |       typedef Eigen::Map<Matrix<double, Di, Dj>, Matrix<double, Di, Dj>::Flags & AlignedBit ? Aligned : Unaligned > HessianBlockType;
+      |                                                                          ~~~~~~^~~~~~~~~~~~
+/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37: note: declared here
+  167 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      |                                     ^~~~~~~~~~
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:60:80: warning: ‘Eigen::AlignedBit’ is deprecated [-Wdeprecated-declarations]
+   60 |       typedef Eigen::Map<Matrix<double, Dj, Di>, Matrix<double, Dj, Di>::Flags & AlignedBit ? Aligned : Unaligned > HessianBlockTransposedType;
+      |                                                                          ~~~~~~^~~~~~~~~~~~
+/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37: note: declared here
+  167 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      |                                     ^~~~~~~~~~
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h: In instantiation of ‘class g2o::BaseBinaryEdge<2, Eigen::Matrix<double, 2, 1>, g2o::VertexSBAPointXYZ, g2o::VertexSE3Expmap>’:
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:114:35:   required from here
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:59:80: warning: ‘Eigen::AlignedBit’ is deprecated [-Wdeprecated-declarations]
+   59 |       typedef Eigen::Map<Matrix<double, Di, Dj>, Matrix<double, Di, Dj>::Flags & AlignedBit ? Aligned : Unaligned > HessianBlockType;
+      |                                                                          ~~~~~~^~~~~~~~~~~~
+/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37: note: declared here
+  167 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      |                                     ^~~~~~~~~~
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:60:80: warning: ‘Eigen::AlignedBit’ is deprecated [-Wdeprecated-declarations]
+   60 |       typedef Eigen::Map<Matrix<double, Dj, Di>, Matrix<double, Dj, Di>::Flags & AlignedBit ? Aligned : Unaligned > HessianBlockTransposedType;
+      |                                                                          ~~~~~~^~~~~~~~~~~~
+/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37: note: declared here
+  167 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      |                                     ^~~~~~~~~~
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h: In instantiation of ‘class g2o::BaseBinaryEdge<2, Eigen::Matrix<double, 2, 1>, g2o::VertexSBAPointXYZ, g2o::VertexSim3Expmap>’:
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/types_seven_dof_expmap.h:130:36:   required from here
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:59:80: warning: ‘Eigen::AlignedBit’ is deprecated [-Wdeprecated-declarations]
+   59 |       typedef Eigen::Map<Matrix<double, Di, Dj>, Matrix<double, Di, Dj>::Flags & AlignedBit ? Aligned : Unaligned > HessianBlockType;
+      |                                                                          ~~~~~~^~~~~~~~~~~~
+/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37: note: declared here
+  167 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      |                                     ^~~~~~~~~~
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h: In instantiation of ‘class g2o::BaseBinaryEdge<3, Eigen::Matrix<double, 3, 1>, g2o::VertexSBAPointXYZ, g2o::VertexSE3Expmap>’:
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:146:41:   required from here
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:59:80: warning: ‘Eigen::AlignedBit’ is deprecated [-Wdeprecated-declarations]
+   59 |       typedef Eigen::Map<Matrix<double, Di, Dj>, Matrix<double, Di, Dj>::Flags & AlignedBit ? Aligned : Unaligned > HessianBlockType;
+      |                                                                          ~~~~~~^~~~~~~~~~~~
+/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37: note: declared here
+  167 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      |                                     ^~~~~~~~~~
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:60:80: warning: ‘Eigen::AlignedBit’ is deprecated [-Wdeprecated-declarations]
+   60 |       typedef Eigen::Map<Matrix<double, Dj, Di>, Matrix<double, Dj, Di>::Flags & AlignedBit ? Aligned : Unaligned > HessianBlockTransposedType;
+      |                                                                          ~~~~~~^~~~~~~~~~~~
+/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37: note: declared here
+  167 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      |                                     ^~~~~~~~~~
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:60:80: warning: ‘Eigen::AlignedBit’ is deprecated [-Wdeprecated-declarations]
+   60 |       typedef Eigen::Map<Matrix<double, Dj, Di>, Matrix<double, Dj, Di>::Flags & AlignedBit ? Aligned : Unaligned > HessianBlockTransposedType;
+      |                                                                          ~~~~~~^~~~~~~~~~~~
+/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37: note: declared here
+  167 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      |                                     ^~~~~~~~~~
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/../core/base_vertex.h: In instantiation of ‘class g2o::BaseVertex<7, g2o::Sim3>’:
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/types_seven_dof_expmap.h:48:35:   required from here
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/../core/base_vertex.h:62:72: warning: ‘Eigen::AlignedBit’ is deprecated [-Wdeprecated-declarations]
+   62 |     typedef Eigen::Map<Matrix<double, D, D>, Matrix<double,D,D>::Flags & AlignedBit ? Aligned : Unaligned >  HessianBlockType;
+      |                                                                  ~~~~~~^~~~~~~~~~~~
+/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37: note: declared here
+  167 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      |                                     ^~~~~~~~~~
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h: In instantiation of ‘class g2o::BaseBinaryEdge<7, g2o::Sim3, g2o::VertexSim3Expmap, g2o::VertexSim3Expmap>’:
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/types_seven_dof_expmap.h:99:27:   required from here
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:59:80: warning: ‘Eigen::AlignedBit’ is deprecated [-Wdeprecated-declarations]
+   59 |       typedef Eigen::Map<Matrix<double, Di, Dj>, Matrix<double, Di, Dj>::Flags & AlignedBit ? Aligned : Unaligned > HessianBlockType;
+      |                                                                          ~~~~~~^~~~~~~~~~~~
+/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37: note: declared here
+  167 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      |                                     ^~~~~~~~~~
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:60:80: warning: ‘Eigen::AlignedBit’ is deprecated [-Wdeprecated-declarations]
+   60 |       typedef Eigen::Map<Matrix<double, Dj, Di>, Matrix<double, Dj, Di>::Flags & AlignedBit ? Aligned : Unaligned > HessianBlockTransposedType;
+      |                                                                          ~~~~~~^~~~~~~~~~~~
+/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37: note: declared here
+  167 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      |                                     ^~~~~~~~~~
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h: In instantiation of ‘class g2o::BaseBinaryEdge<2, Eigen::Matrix<double, 2, 1>, g2o::VertexSBAPointXYZ, g2o::VertexSim3Expmap>’:
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/types_seven_dof_expmap.h:130:36:   required from here
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:59:80: warning: ‘Eigen::AlignedBit’ is deprecated [-Wdeprecated-declarations]
+   59 |       typedef Eigen::Map<Matrix<double, Di, Dj>, Matrix<double, Di, Dj>::Flags & AlignedBit ? Aligned : Unaligned > HessianBlockType;
+      |                                                                          ~~~~~~^~~~~~~~~~~~
+/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37: note: declared here
+  167 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      |                                     ^~~~~~~~~~
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:60:80: warning: ‘Eigen::AlignedBit’ is deprecated [-Wdeprecated-declarations]
+   60 |       typedef Eigen::Map<Matrix<double, Dj, Di>, Matrix<double, Dj, Di>::Flags & AlignedBit ? Aligned : Unaligned > HessianBlockTransposedType;
+      |                                                                          ~~~~~~^~~~~~~~~~~~
+/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37: note: declared here
+  167 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      |                                     ^~~~~~~~~~
+In file included from /home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/include/Frame.h:30,
+                 from /home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/include/KeyFrame.h:28:
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/include/ImuTypes.h: In member function ‘void ORB_SLAM3::IMU::Preintegrated::printMeasurements() const’:
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/include/ImuTypes.h:204:23: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<ORB_SLAM3::IMU::Preintegrated::integrable>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+  204 |         for(int i=0; i<mvMeasurements.size(); i++){
+      |                      ~^~~~~~~~~~~~~~~~~~~~~~
+In file included from /home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:37,
+                 from /home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/include/Converter.h:26,
+                 from /home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/include/Frame.h:33:
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/../core/base_vertex.h: At global scope:
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/../core/base_vertex.h:62:74: warning: ‘Eigen::AlignedBit’ is deprecated [-Wdeprecated-declarations]
+   62 |     typedef Eigen::Map<Matrix<double, D, D>, Matrix<double,D,D>::Flags & AlignedBit ? Aligned : Unaligned >  HessianBlockType;
+      |                                                                          ^~~~~~~~~~
+In file included from /usr/include/eigen3/Eigen/Core:161,
+                 from /usr/include/eigen3/Eigen/LU:11,
+                 from /home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/Thirdparty/Sophus/sophus/so2.hpp:12,
+                 from /home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/Thirdparty/Sophus/sophus/se2.hpp:7,
+                 from /home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/Thirdparty/Sophus/sophus/geometry.hpp:7,
+                 from /home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/include/Frame.h:28:
+/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37: note: declared here
+  167 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      |                                     ^~~~~~~~~~
+In file included from /home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:38:
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:59:82: warning: ‘Eigen::AlignedBit’ is deprecated [-Wdeprecated-declarations]
+   59 |       typedef Eigen::Map<Matrix<double, Di, Dj>, Matrix<double, Di, Dj>::Flags & AlignedBit ? Aligned : Unaligned > HessianBlockType;
+      |                                                                                  ^~~~~~~~~~
+/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37: note: declared here
+  167 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      |                                     ^~~~~~~~~~
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:60:82: warning: ‘Eigen::AlignedBit’ is deprecated [-Wdeprecated-declarations]
+   60 |       typedef Eigen::Map<Matrix<double, Dj, Di>, Matrix<double, Dj, Di>::Flags & AlignedBit ? Aligned : Unaligned > HessianBlockTransposedType;
+      |                                                                                  ^~~~~~~~~~
+/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37: note: declared here
+  167 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      |                                     ^~~~~~~~~~
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/../core/base_vertex.h: In instantiation of ‘class g2o::BaseVertex<3, Eigen::Matrix<double, 3, 1> >’:
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/types_sba.h:40:35:   required from here
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/../core/base_vertex.h:62:72: warning: ‘Eigen::AlignedBit’ is deprecated [-Wdeprecated-declarations]
+   62 |     typedef Eigen::Map<Matrix<double, D, D>, Matrix<double,D,D>::Flags & AlignedBit ? Aligned : Unaligned >  HessianBlockType;
+      |                                                                  ~~~~~~^~~~~~~~~~~~
+/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37: note: declared here
+  167 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      |                                     ^~~~~~~~~~
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/../core/base_vertex.h: In instantiation of ‘class g2o::BaseVertex<6, g2o::SE3Quat>’:
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:59:33:   required from here
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/../core/base_vertex.h:62:72: warning: ‘Eigen::AlignedBit’ is deprecated [-Wdeprecated-declarations]
+   62 |     typedef Eigen::Map<Matrix<double, D, D>, Matrix<double,D,D>::Flags & AlignedBit ? Aligned : Unaligned >  HessianBlockType;
+      |                                                                  ~~~~~~^~~~~~~~~~~~
+/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37: note: declared here
+  167 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      |                                     ^~~~~~~~~~
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h: In instantiation of ‘class g2o::BaseBinaryEdge<6, g2o::SE3Quat, g2o::VertexSE3Expmap, g2o::VertexSE3Expmap>’:
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:83:24:   required from here
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:59:80: warning: ‘Eigen::AlignedBit’ is deprecated [-Wdeprecated-declarations]
+   59 |       typedef Eigen::Map<Matrix<double, Di, Dj>, Matrix<double, Di, Dj>::Flags & AlignedBit ? Aligned : Unaligned > HessianBlockType;
+      |                                                                          ~~~~~~^~~~~~~~~~~~
+/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37: note: declared here
+  167 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      |                                     ^~~~~~~~~~
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:60:80: warning: ‘Eigen::AlignedBit’ is deprecated [-Wdeprecated-declarations]
+   60 |       typedef Eigen::Map<Matrix<double, Dj, Di>, Matrix<double, Dj, Di>::Flags & AlignedBit ? Aligned : Unaligned > HessianBlockTransposedType;
+      |                                                                          ~~~~~~^~~~~~~~~~~~
+/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37: note: declared here
+  167 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      |                                     ^~~~~~~~~~
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h: In instantiation of ‘class g2o::BaseBinaryEdge<2, Eigen::Matrix<double, 2, 1>, g2o::VertexSBAPointXYZ, g2o::VertexSE3Expmap>’:
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:114:35:   required from here
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:59:80: warning: ‘Eigen::AlignedBit’ is deprecated [-Wdeprecated-declarations]
+   59 |       typedef Eigen::Map<Matrix<double, Di, Dj>, Matrix<double, Di, Dj>::Flags & AlignedBit ? Aligned : Unaligned > HessianBlockType;
+      |                                                                          ~~~~~~^~~~~~~~~~~~
+/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37: note: declared here
+  167 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      |                                     ^~~~~~~~~~
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:60:80: warning: ‘Eigen::AlignedBit’ is deprecated [-Wdeprecated-declarations]
+   60 |       typedef Eigen::Map<Matrix<double, Dj, Di>, Matrix<double, Dj, Di>::Flags & AlignedBit ? Aligned : Unaligned > HessianBlockTransposedType;
+      |                                                                          ~~~~~~^~~~~~~~~~~~
+/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37: note: declared here
+  167 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      |                                     ^~~~~~~~~~
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h: In instantiation of ‘class g2o::BaseBinaryEdge<3, Eigen::Matrix<double, 3, 1>, g2o::VertexSBAPointXYZ, g2o::VertexSE3Expmap>’:
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:146:41:   required from here
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:59:80: warning: ‘Eigen::AlignedBit’ is deprecated [-Wdeprecated-declarations]
+   59 |       typedef Eigen::Map<Matrix<double, Di, Dj>, Matrix<double, Di, Dj>::Flags & AlignedBit ? Aligned : Unaligned > HessianBlockType;
+      |                                                                          ~~~~~~^~~~~~~~~~~~
+/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37: note: declared here
+  167 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      |                                     ^~~~~~~~~~
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:60:80: warning: ‘Eigen::AlignedBit’ is deprecated [-Wdeprecated-declarations]
+   60 |       typedef Eigen::Map<Matrix<double, Dj, Di>, Matrix<double, Dj, Di>::Flags & AlignedBit ? Aligned : Unaligned > HessianBlockTransposedType;
+      |                                                                          ~~~~~~^~~~~~~~~~~~
+/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37: note: declared here
+  167 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      |                                     ^~~~~~~~~~
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/src/KeyFrame.cc: In constructor ‘ORB_SLAM3::KeyFrame::KeyFrame()’:
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/src/KeyFrame.cc:35:89: warning: passing NULL to non-pointer argument 1 of ‘std::vector<_Tp, _Alloc>::vector(size_type, const allocator_type&) [with _Tp = cv::KeyPoint; _Alloc = std::allocator<cv::KeyPoint>; size_type = long unsigned int; allocator_type = std::allocator<cv::KeyPoint>]’ [-Wconversion-null]
+   35 |         mbf(0), mb(0), mThDepth(0), N(0), mvKeys(static_cast<vector<cv::KeyPoint> >(NULL)), mvKeysUn(static_cast<vector<cv::KeyPoint> >(NULL)),
+      |                                                                                         ^
+In file included from /usr/include/c++/13/vector:66,
+                 from /home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/include/Frame.h:23:
+/usr/include/c++/13/bits/stl_vector.h:556:24: note:   declared here
+  556 |       vector(size_type __n, const allocator_type& __a = allocator_type())
+      |              ~~~~~~~~~~^~~
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/src/KeyFrame.cc:35:141: warning: passing NULL to non-pointer argument 1 of ‘std::vector<_Tp, _Alloc>::vector(size_type, const allocator_type&) [with _Tp = cv::KeyPoint; _Alloc = std::allocator<cv::KeyPoint>; size_type = long unsigned int; allocator_type = std::allocator<cv::KeyPoint>]’ [-Wconversion-null]
+   35 |         mbf(0), mb(0), mThDepth(0), N(0), mvKeys(static_cast<vector<cv::KeyPoint> >(NULL)), mvKeysUn(static_cast<vector<cv::KeyPoint> >(NULL)),
+      |                                                                                                                                             ^
+/usr/include/c++/13/bits/stl_vector.h:556:24: note:   declared here
+  556 |       vector(size_type __n, const allocator_type& __a = allocator_type())
+      |              ~~~~~~~~~~^~~
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/src/KeyFrame.cc:36:50: warning: passing NULL to non-pointer argument 1 of ‘std::vector<_Tp, _Alloc>::vector(size_type, const allocator_type&) [with _Tp = float; _Alloc = std::allocator<float>; size_type = long unsigned int; allocator_type = std::allocator<float>]’ [-Wconversion-null]
+   36 |         mvuRight(static_cast<vector<float> >(NULL)), mvDepth(static_cast<vector<float> >(NULL)), mnScaleLevels(0), mfScaleFactor(0),
+      |                                                  ^
+/usr/include/c++/13/bits/stl_vector.h:556:24: note:   declared here
+  556 |       vector(size_type __n, const allocator_type& __a = allocator_type())
+      |              ~~~~~~~~~~^~~
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/src/KeyFrame.cc:36:94: warning: passing NULL to non-pointer argument 1 of ‘std::vector<_Tp, _Alloc>::vector(size_type, const allocator_type&) [with _Tp = float; _Alloc = std::allocator<float>; size_type = long unsigned int; allocator_type = std::allocator<float>]’ [-Wconversion-null]
+   36 |         mvuRight(static_cast<vector<float> >(NULL)), mvDepth(static_cast<vector<float> >(NULL)), mnScaleLevels(0), mfScaleFactor(0),
+      |                                                                                              ^
+/usr/include/c++/13/bits/stl_vector.h:556:24: note:   declared here
+  556 |       vector(size_type __n, const allocator_type& __a = allocator_type())
+      |              ~~~~~~~~~~^~~
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/include/KeyFrame.h:369:23: warning: ‘ORB_SLAM3::KeyFrame::mnBALocalForMerge’ will be initialized after [-Wreorder]
+  369 |     long unsigned int mnBALocalForMerge;
+      |                       ^~~~~~~~~~~~~~~~~
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/include/KeyFrame.h:335:23: warning:   ‘long unsigned int ORB_SLAM3::KeyFrame::mnLoopQuery’ [-Wreorder]
+  335 |     long unsigned int mnLoopQuery;
+      |                       ^~~~~~~~~~~
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/src/KeyFrame.cc:29:1: warning:   when initialized here [-Wreorder]
+   29 | KeyFrame::KeyFrame():
+      | ^~~~~~~~
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/include/KeyFrame.h:374:40: warning: ‘ORB_SLAM3::KeyFrame::invfy’ will be initialized after [-Wreorder]
+  374 |     const float fx, fy, cx, cy, invfx, invfy, mbf, mb, mThDepth;
+      |                                        ^~~~~
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/include/KeyFrame.h:344:23: warning:   ‘long unsigned int ORB_SLAM3::KeyFrame::mnPlaceRecognitionQuery’ [-Wreorder]
+  344 |     long unsigned int mnPlaceRecognitionQuery;
+      |                       ^~~~~~~~~~~~~~~~~~~~~~~
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/src/KeyFrame.cc:29:1: warning:   when initialized here [-Wreorder]
+   29 | KeyFrame::KeyFrame():
+      | ^~~~~~~~
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/include/KeyFrame.h:483:11: warning: ‘ORB_SLAM3::KeyFrame::mHalfBaseline’ will be initialized after [-Wreorder]
+  483 |     float mHalfBaseline; // Only for visualization
+      |           ^~~~~~~~~~~~~
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/include/KeyFrame.h:348:10: warning:   ‘bool ORB_SLAM3::KeyFrame::mbCurrentPlaceRecognition’ [-Wreorder]
+  348 |     bool mbCurrentPlaceRecognition;
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/src/KeyFrame.cc:29:1: warning:   when initialized here [-Wreorder]
+   29 | KeyFrame::KeyFrame():
+      | ^~~~~~~~
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/include/KeyFrame.h:516:22: warning: ‘ORB_SLAM3::KeyFrame::NRight’ will be initialized after [-Wreorder]
+  516 |     const int NLeft, NRight;
+      |                      ^~~~~~
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/include/KeyFrame.h:332:23: warning:   ‘long unsigned int ORB_SLAM3::KeyFrame::mnNumberOfOpt’ [-Wreorder]
+  332 |     long unsigned int mnNumberOfOpt;
+      |                       ^~~~~~~~~~~~~
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/src/KeyFrame.cc:29:1: warning:   when initialized here [-Wreorder]
+   29 | KeyFrame::KeyFrame():
+      | ^~~~~~~~
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/include/KeyFrame.h: In constructor ‘ORB_SLAM3::KeyFrame::KeyFrame(ORB_SLAM3::Frame&, ORB_SLAM3::Map*, ORB_SLAM3::KeyFrameDatabase*)’:
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/include/KeyFrame.h:369:23: warning: ‘ORB_SLAM3::KeyFrame::mnBALocalForMerge’ will be initialized after [-Wreorder]
+  369 |     long unsigned int mnBALocalForMerge;
+      |                       ^~~~~~~~~~~~~~~~~
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/include/KeyFrame.h:335:23: warning:   ‘long unsigned int ORB_SLAM3::KeyFrame::mnLoopQuery’ [-Wreorder]
+  335 |     long unsigned int mnLoopQuery;
+      |                       ^~~~~~~~~~~
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/src/KeyFrame.cc:45:1: warning:   when initialized here [-Wreorder]
+   45 | KeyFrame::KeyFrame(Frame &F, Map *pMap, KeyFrameDatabase *pKFDB):
+      | ^~~~~~~~
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/include/KeyFrame.h:357:23: warning: ‘ORB_SLAM3::KeyFrame::mnBAGlobalForKF’ will be initialized after [-Wreorder]
+  357 |     long unsigned int mnBAGlobalForKF;
+      |                       ^~~~~~~~~~~~~~~
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/include/KeyFrame.h:344:23: warning:   ‘long unsigned int ORB_SLAM3::KeyFrame::mnPlaceRecognitionQuery’ [-Wreorder]
+  344 |     long unsigned int mnPlaceRecognitionQuery;
+      |                       ^~~~~~~~~~~~~~~~~~~~~~~
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/src/KeyFrame.cc:45:1: warning:   when initialized here [-Wreorder]
+   45 | KeyFrame::KeyFrame(Frame &F, Map *pMap, KeyFrameDatabase *pKFDB):
+      | ^~~~~~~~
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/include/KeyFrame.h:496:21: warning: ‘ORB_SLAM3::KeyFrame::mK_’ will be initialized after [-Wreorder]
+  496 |     Eigen::Matrix3f mK_;
+      |                     ^~~
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/include/KeyFrame.h:409:15: warning:   ‘ORB_SLAM3::KeyFrame* ORB_SLAM3::KeyFrame::mPrevKF’ [-Wreorder]
+  409 |     KeyFrame* mPrevKF;
+      |               ^~~~~~~
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/src/KeyFrame.cc:45:1: warning:   when initialized here [-Wreorder]
+   45 | KeyFrame::KeyFrame(Frame &F, Map *pMap, KeyFrameDatabase *pKFDB):
+      | ^~~~~~~~
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/include/KeyFrame.h:468:15: warning: ‘ORB_SLAM3::KeyFrame::mpParent’ will be initialized after [-Wreorder]
+  468 |     KeyFrame* mpParent;
+      |               ^~~~~~~~
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/include/KeyFrame.h:375:13: warning:   ‘cv::Mat ORB_SLAM3::KeyFrame::mDistCoef’ [-Wreorder]
+  375 |     cv::Mat mDistCoef;
+      |             ^~~~~~~~~
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/src/KeyFrame.cc:45:1: warning:   when initialized here [-Wreorder]
+   45 | KeyFrame::KeyFrame(Frame &F, Map *pMap, KeyFrameDatabase *pKFDB):
+      | ^~~~~~~~
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/include/KeyFrame.h:479:10: warning: ‘ORB_SLAM3::KeyFrame::mbNotErase’ will be initialized after [-Wreorder]
+  479 |     bool mbNotErase;
+      |          ^~~~~~~~~~
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/include/KeyFrame.h:419:9: warning:   ‘int ORB_SLAM3::KeyFrame::mnDataset’ [-Wreorder]
+  419 |     int mnDataset;
+      |         ^~~~~~~~~
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/src/KeyFrame.cc:45:1: warning:   when initialized here [-Wreorder]
+   45 | KeyFrame::KeyFrame(Frame &F, Map *pMap, KeyFrameDatabase *pKFDB):
+      | ^~~~~~~~
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/include/KeyFrame.h:485:10: warning: ‘ORB_SLAM3::KeyFrame::mpMap’ will be initialized after [-Wreorder]
+  485 |     Map* mpMap;
+      |          ^~~~~
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/include/KeyFrame.h:348:10: warning:   ‘bool ORB_SLAM3::KeyFrame::mbCurrentPlaceRecognition’ [-Wreorder]
+  348 |     bool mbCurrentPlaceRecognition;
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/src/KeyFrame.cc:45:1: warning:   when initialized here [-Wreorder]
+   45 | KeyFrame::KeyFrame(Frame &F, Map *pMap, KeyFrameDatabase *pKFDB):
+      | ^~~~~~~~
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/include/KeyFrame.h:417:12: warning: ‘ORB_SLAM3::KeyFrame::mNameFile’ will be initialized after [-Wreorder]
+  417 |     string mNameFile;
+      |            ^~~~~~~~~
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/include/KeyFrame.h:366:23: warning:   ‘long unsigned int ORB_SLAM3::KeyFrame::mnMergeCorrectedForKF’ [-Wreorder]
+  366 |     long unsigned int mnMergeCorrectedForKF;
+      |                       ^~~~~~~~~~~~~~~~~~~~~
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/src/KeyFrame.cc:45:1: warning:   when initialized here [-Wreorder]
+   45 | KeyFrame::KeyFrame(Frame &F, Map *pMap, KeyFrameDatabase *pKFDB):
+      | ^~~~~~~~
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/include/KeyFrame.h:508:42: warning: ‘ORB_SLAM3::KeyFrame::mvRightToLeftMatch’ will be initialized after [-Wreorder]
+  508 |     std::vector<int> mvLeftToRightMatch, mvRightToLeftMatch;
+      |                                          ^~~~~~~~~~~~~~~~~~
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/include/KeyFrame.h:442:24: warning:   ‘Sophus::SE3<float> ORB_SLAM3::KeyFrame::mTlr’ [-Wreorder]
+  442 |     Sophus::SE3<float> mTlr;
+      |                        ^~~~
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/src/KeyFrame.cc:45:1: warning:   when initialized here [-Wreorder]
+   45 | KeyFrame::KeyFrame(Frame &F, Map *pMap, KeyFrameDatabase *pKFDB):
+      | ^~~~~~~~
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/include/KeyFrame.h:516:22: warning: ‘ORB_SLAM3::KeyFrame::NRight’ will be initialized after [-Wreorder]
+  516 |     const int NLeft, NRight;
+      |                      ^~~~~~
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/include/KeyFrame.h:443:24: warning:   ‘Sophus::SE3<float> ORB_SLAM3::KeyFrame::mTrl’ [-Wreorder]
+  443 |     Sophus::SE3<float> mTrl;
+      |                        ^~~~
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/src/KeyFrame.cc:45:1: warning:   when initialized here [-Wreorder]
+   45 | KeyFrame::KeyFrame(Frame &F, Map *pMap, KeyFrameDatabase *pKFDB):
+      | ^~~~~~~~
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/include/KeyFrame.h:443:24: warning: ‘ORB_SLAM3::KeyFrame::mTrl’ will be initialized after [-Wreorder]
+  443 |     Sophus::SE3<float> mTrl;
+      |                        ^~~~
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/include/KeyFrame.h:332:23: warning:   ‘long unsigned int ORB_SLAM3::KeyFrame::mnNumberOfOpt’ [-Wreorder]
+  332 |     long unsigned int mnNumberOfOpt;
+      |                       ^~~~~~~~~~~~~
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/src/KeyFrame.cc:45:1: warning:   when initialized here [-Wreorder]
+   45 | KeyFrame::KeyFrame(Frame &F, Map *pMap, KeyFrameDatabase *pKFDB):
+      | ^~~~~~~~
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/src/KeyFrame.cc: In member function ‘void ORB_SLAM3::KeyFrame::EraseMapPointMatch(ORB_SLAM3::MapPoint*)’:
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/src/KeyFrame.cc:316:18: warning: comparison of integer expressions of different signedness: ‘size_t’ {aka ‘long unsigned int’} and ‘int’ [-Wsign-compare]
+  316 |     if(leftIndex != -1)
+      |        ~~~~~~~~~~^~~~~
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/src/KeyFrame.cc:318:19: warning: comparison of integer expressions of different signedness: ‘size_t’ {aka ‘long unsigned int’} and ‘int’ [-Wsign-compare]
+  318 |     if(rightIndex != -1)
+      |        ~~~~~~~~~~~^~~~~
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/../core/base_vertex.h: In instantiation of ‘class g2o::BaseVertex<7, g2o::Sim3>’:
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/types_seven_dof_expmap.h:48:35:   required from here
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/../core/base_vertex.h:62:72: warning: ‘Eigen::AlignedBit’ is deprecated [-Wdeprecated-declarations]
+   62 |     typedef Eigen::Map<Matrix<double, D, D>, Matrix<double,D,D>::Flags & AlignedBit ? Aligned : Unaligned >  HessianBlockType;
+      |                                                                  ~~~~~~^~~~~~~~~~~~
+/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37: note: declared here
+  167 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      |                                     ^~~~~~~~~~
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h: In instantiation of ‘class g2o::BaseBinaryEdge<7, g2o::Sim3, g2o::VertexSim3Expmap, g2o::VertexSim3Expmap>’:
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/types_seven_dof_expmap.h:99:27:   required from here
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:59:80: warning: ‘Eigen::AlignedBit’ is deprecated [-Wdeprecated-declarations]
+   59 |       typedef Eigen::Map<Matrix<double, Di, Dj>, Matrix<double, Di, Dj>::Flags & AlignedBit ? Aligned : Unaligned > HessianBlockType;
+      |                                                                          ~~~~~~^~~~~~~~~~~~
+/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37: note: declared here
+  167 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      |                                     ^~~~~~~~~~
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:60:80: warning: ‘Eigen::AlignedBit’ is deprecated [-Wdeprecated-declarations]
+   60 |       typedef Eigen::Map<Matrix<double, Dj, Di>, Matrix<double, Dj, Di>::Flags & AlignedBit ? Aligned : Unaligned > HessianBlockTransposedType;
+      |                                                                          ~~~~~~^~~~~~~~~~~~
+/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37: note: declared here
+  167 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      |                                     ^~~~~~~~~~
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h: In instantiation of ‘class g2o::BaseBinaryEdge<2, Eigen::Matrix<double, 2, 1>, g2o::VertexSBAPointXYZ, g2o::VertexSim3Expmap>’:
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/types_seven_dof_expmap.h:130:36:   required from here
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:59:80: warning: ‘Eigen::AlignedBit’ is deprecated [-Wdeprecated-declarations]
+   59 |       typedef Eigen::Map<Matrix<double, Di, Dj>, Matrix<double, Di, Dj>::Flags & AlignedBit ? Aligned : Unaligned > HessianBlockType;
+      |                                                                          ~~~~~~^~~~~~~~~~~~
+/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37: note: declared here
+  167 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      |                                     ^~~~~~~~~~
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:60:80: warning: ‘Eigen::AlignedBit’ is deprecated [-Wdeprecated-declarations]
+   60 |       typedef Eigen::Map<Matrix<double, Dj, Di>, Matrix<double, Dj, Di>::Flags & AlignedBit ? Aligned : Unaligned > HessianBlockTransposedType;
+      |                                                                          ~~~~~~^~~~~~~~~~~~
+/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37: note: declared here
+  167 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      |                                     ^~~~~~~~~~
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/include/MapPoint.h: In constructor ‘ORB_SLAM3::MapPoint::MapPoint(const Eigen::Vector3f&, ORB_SLAM3::KeyFrame*, ORB_SLAM3::Map*)’:
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/include/MapPoint.h:245:11: warning: ‘ORB_SLAM3::MapPoint::mpMap’ will be initialized after [-Wreorder]
+  245 |      Map* mpMap;
+      |           ^~~~~
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/include/MapPoint.h:208:18: warning:   ‘unsigned int ORB_SLAM3::MapPoint::mnOriginMapId’ [-Wreorder]
+  208 |     unsigned int mnOriginMapId;
+      |                  ^~~~~~~~~~~~~
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/src/MapPoint.cc:39:1: warning:   when initialized here [-Wreorder]
+   39 | MapPoint::MapPoint(const Eigen::Vector3f &Pos, KeyFrame *pRefKF, Map* pMap):
+      | ^~~~~~~~
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/include/MapPoint.h: In constructor ‘ORB_SLAM3::MapPoint::MapPoint(double, cv::Point2f, ORB_SLAM3::KeyFrame*, ORB_SLAM3::KeyFrame*, ORB_SLAM3::Map*)’:
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/include/MapPoint.h:245:11: warning: ‘ORB_SLAM3::MapPoint::mpMap’ will be initialized after [-Wreorder]
+  245 |      Map* mpMap;
+      |           ^~~~~
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/include/MapPoint.h:208:18: warning:   ‘unsigned int ORB_SLAM3::MapPoint::mnOriginMapId’ [-Wreorder]
+  208 |     unsigned int mnOriginMapId;
+      |                  ^~~~~~~~~~~~~
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/src/MapPoint.cc:58:1: warning:   when initialized here [-Wreorder]
+   58 | MapPoint::MapPoint(const double invDepth, cv::Point2f uv_init, KeyFrame* pRefKF, KeyFrame* pHostKF, Map* pMap):
+      | ^~~~~~~~
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/include/MapPoint.h: In constructor ‘ORB_SLAM3::MapPoint::MapPoint(const Eigen::Vector3f&, ORB_SLAM3::Map*, ORB_SLAM3::Frame*, const int&)’:
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/include/MapPoint.h:245:11: warning: ‘ORB_SLAM3::MapPoint::mpMap’ will be initialized after [-Wreorder]
+  245 |      Map* mpMap;
+      |           ^~~~~
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/include/MapPoint.h:208:18: warning:   ‘unsigned int ORB_SLAM3::MapPoint::mnOriginMapId’ [-Wreorder]
+  208 |     unsigned int mnOriginMapId;
+      |                  ^~~~~~~~~~~~~
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/src/MapPoint.cc:78:1: warning:   when initialized here [-Wreorder]
+   78 | MapPoint::MapPoint(const Eigen::Vector3f &Pos, Map* pMap, Frame* pFrame, const int &idxF):
+      | ^~~~~~~~
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/src/MapPoint.cc: In member function ‘void ORB_SLAM3::MapPoint::PrintObservations()’:
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/src/MapPoint.cc:555:13: warning: unused variable ‘leftIndex’ [-Wunused-variable]
+  555 |         int leftIndex = get<0>(indexes), rightIndex = get<1>(indexes);
+      |             ^~~~~~~~~
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/src/MapPoint.cc:555:42: warning: unused variable ‘rightIndex’ [-Wunused-variable]
+  555 |         int leftIndex = get<0>(indexes), rightIndex = get<1>(indexes);
+      |                                          ^~~~~~~~~~
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/src/Tracking.cc: At global scope:
+/home/slamet/Dev/ros2_test/src/ros2_orb_slam3/orb_slam3/src/Tracking.cc:48:13: warning: ‘g_csvCurrentSecond’ defined but not used [-Wunused-variable]
+   48 | static long g_csvCurrentSecond = -1;
+      |             ^~~~~~~~~~~~~~~~~~
+gmake[2]: *** [CMakeFiles/orb_slam3_lib.dir/build.make:90: CMakeFiles/orb_slam3_lib.dir/orb_slam3/src/Tracking.cc.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:144: CMakeFiles/orb_slam3_lib.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2
+---
+Failed   <<< ros2_orb_slam3 [3min 13s, exited with code 2]
